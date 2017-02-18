@@ -1,0 +1,8 @@
+
+<% if current_user %>
+  Signed in as <%= current_user.lastname %>,<%= current_user.firstname %> | <%= link_to "Logout", '/logout' %>
+<% else %>
+  <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+<% end %>
+
+<br><br>You did it!, welcome to users#index.html!!
