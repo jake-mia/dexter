@@ -6,18 +6,24 @@ before_action :authorize, only: [:index]
 def index
 end
 
-def new
+def signup
 end
 
 def create
+
   user = User.new(user_params)
-      if user.save
-        session[:user_id] = user.id
-        redirect_to '/'
-      else
-        redirect_to '/signup'
-      end
-    end
+        if user.password != user.password_confirmation
+          flash[:notice] = "Can't proceed, passwords don't match."
+          redirect_to '/signup'
+        elsif user.save
+              session[:user_id] = user.id
+              redirect_to '/'
+        else
+          flash[:notice] = "Couldn't save to db, probably exists already."
+          redirect_to '/signup'
+        end
+
+end
 
   private
 
