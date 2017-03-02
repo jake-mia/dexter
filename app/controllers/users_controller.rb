@@ -4,6 +4,7 @@ class UsersController < ApplicationController
 
 # this could be the unloggedin page if you want one
 def index
+
 end
 
 def signup
