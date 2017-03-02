@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-before_action :authorize, only: [:index]
+#before_action :authorize, only: [:index]
 #before_action :authorize :redirect_unless_logged_in, only: [:show, :edit]
 
 # this could be the unloggedin page if you want one

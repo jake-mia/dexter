@@ -1,6 +1,6 @@
 
-<br><br><br>
-<div id="outter">
+<div class="scrollingthing" data-spy="scroll">
+<div id="outter-dexter">
 <div class="splashlogin" id="inner">
 <h1>Signup!</h1>
 <%= form_for :user, url: '/users' do |f| %>
@@ -14,6 +14,9 @@
   <b>email</b> <%= f.text_field :email, class: 'form-control', placeholder: "email" %>
 </div>
 <div class="form-group">
+  <b>phone XXX-XXX-XXXX</b> <%= f.text_field :phone, class: 'form-control', placeholder: "phone" %>
+</div>
+<div class="form-group">
   <b>Password</b> <%= f.password_field :password, class: 'form-control', placeholder: "password" %>
 </div>
 <div class="form-group">
@@ -21,9 +24,10 @@
 </div>
 <div class="form-group">
   <%= f.submit "submit", class: 'btn btn-default btn-lg btn-submit'%>
-  <%= link_to "cancel", '/login', class: 'btn btn-default btn-lg'%>
+  <%= link_to "cancel", '/', class: 'btn btn-default btn-lg'%>
 </div>
 <% end %>
+</div>
 </div>
 </div>
 <br><br><center><%= notice %></center>

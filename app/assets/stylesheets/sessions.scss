@@ -3,17 +3,16 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .splashlogin {
-width: 60%;
 border: solid 1px #47495e;
 border-radius: 8px;
 background-color: #e0e2f7; /* #d5d5d5; */
 padding: 30px;
-box-shadow: 7px 9px 5px #d1d6d6;
+/* box-shadow: 7px 9px 5px #d1d6d6; */
 }
 
 #inner {
-    width: 50%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 20px auto;
 }
 
 #outter {
@@ -21,8 +20,11 @@ box-shadow: 7px 9px 5px #d1d6d6;
 
 }
 
+/* iphone 4 size */
 #outter-dexter {
-    width: 430px;
+    position: fixed;
+    width: 320px;
+    height: 480px;
     background-color: #c6b6c7;
     border-radius: 3px;
 }
@@ -35,25 +37,28 @@ box-shadow: 7px 9px 5px #d1d6d6;
 .dexter-button {
   vertical-align: center;
   padding-top: 8px;
-  border: solid 1px black;
-  margin: 20px 0 0 30px;
+  border: solid 0px black;
+  margin: 25px 0 0 30px;
 }
 
 .dexter-one {
   font-size: 20px;
   display: inline-block;
   vertical-align: middle;
-  width: 210px;
+  width: 170px;
   padding: 8px;
-  border: solid 1px black;
-  margin: 20px 0 0 0;
+  border: solid 0px black;
+  margin: 25px 0 0 0;
 }
 
 .dexter-two {
+  position: absolute;
+  left: 160px;
+  top: 4px;
   width: 150px;
   padding: 8px;
-  border: solid 1px black;
-  margin: 20px 0 0 0
+  border: solid 0px black;
+  margin: 0 0 0 0
 }
 .plusbutton {
   font-size: 150%;
@@ -61,4 +66,10 @@ box-shadow: 7px 9px 5px #d1d6d6;
 
 .spacing {
   margin-bottom: 10px;
+}
+
+scrollingthing {
+  height: 600px;
+  overflow-y: scroll;
+  position: relative;
 }
