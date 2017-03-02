@@ -10,10 +10,43 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170302051153) do
+ActiveRecord::Schema.define(version: 20170302063020) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "challenges", force: :cascade do |t|
+    t.string   "name"
+    t.text     "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "checkins", force: :cascade do |t|
+    t.integer  "user_challenge_id"
+    t.boolean  "completed"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.index ["user_challenge_id"], name: "index_checkins_on_user_challenge_id", using: :btree
+  end
+
+  create_table "steps", force: :cascade do |t|
+    t.integer  "challenge_id"
+    t.string   "name"
+    t.boolean  "completed"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.index ["challenge_id"], name: "index_steps_on_challenge_id", using: :btree
+  end
+
+  create_table "user_challenges", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "challenge_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.index ["challenge_id"], name: "index_user_challenges_on_challenge_id", using: :btree
+    t.index ["user_id"], name: "index_user_challenges_on_user_id", using: :btree
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "firstname"
@@ -25,4 +58,8 @@ ActiveRecord::Schema.define(version: 20170302051153) do
     t.string   "phone"
   end
 
+  add_foreign_key "checkins", "user_challenges"
+  add_foreign_key "steps", "challenges"
+  add_foreign_key "user_challenges", "challenges"
+  add_foreign_key "user_challenges", "users"
 end
