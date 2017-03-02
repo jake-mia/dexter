@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+
+  resources :challenges do
   resources :steps
-  resources :challenges
+end
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
 

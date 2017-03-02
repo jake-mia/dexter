@@ -21,7 +21,7 @@ window.openWin('localhost:3000');
 
         <% if current_user %>
           <div class="row">
-          <div class="dexter-button"><i class="fa fa-plus-circle fa-4x" aria-hidden="true" style="color:#f0f8ff;"></i></div>
+          <div class="dexter-button"><a href="/challenges"><i class="fa fa-plus-circle fa-4x" aria-hidden="true" style="color:#f0f8ff;"></i></a></div>
           <div class="dexter-one"><div style="height: 14px"></div>add a challenge</div>
           <div class="dexter-two"><%= current_user.lastname %>, <%= current_user.firstname %> | <%= link_to "Logout", '/logout' %></div>
           </div>
