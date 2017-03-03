@@ -57,10 +57,24 @@ body {
   margin-top: 1rem;
 }
 
-.dexter-img img{
+.dexter-img img {
   display: block;
   margin: 0 auto;
   margin-top: 8rem;
+}
+
+.dexter-button a{
+  display: flex;
+}
+
+.dexter-button a:visited {
+  color: #fff;
+}
+
+.dexter-button a:hover {
+  color: #fff;
+  background: rgba(255,255,255, 0);
+  text-decoration: none;
 }
 
 /* iphone 4 size */
