@@ -1,21 +1,14 @@
-<!-- <% unless @userchallenge.nil? %> -->
-<% form_for @userchallenge, url: {action: "create"} do |f| %>
+<!-- <%# unless @userchallenge.nil? %> -->
 
-<% @challenges.each do |c| %>
-<div class="field">
-  <%# f.label @user_id %>
-  <%= f.hidden_field :user_id, value: @user_id %>
-  <%# :user_id = @user_id %>
-  <%# f.integer = @user_id %>
-</div>
 
-<div class="checkbox">
-  <%= f.label c.name %>
-  <%= f.checkbox :challenge_ids, {multiple: true}, 1, nil %>
-</div>
-<% end %>
-
-<div class="actions">
-  <%= f.submit %>
-</div>
+<% @challenges.each do |challenge| %>
+  <%= challenge.name %><br>
+  <%= form_for :user_challenge do |f| %>
+    <div class="field">
+      <%= f.hidden_field :challenge_id, value: challenge.id %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Accept"%>
+    </div>
+  <% end %>
 <% end %>

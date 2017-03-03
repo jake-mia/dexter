@@ -7,7 +7,7 @@ end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
 
-get '/' => 'users#index'
+root 'users#index'
 get '/index.html' => 'users#index'
 
 # These routes will be for signup. The first renders a form in the browse, the second will
