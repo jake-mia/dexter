@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
 .splashlogin {
 border: solid 1px #47495e;
 border-radius: 8px;
@@ -37,28 +41,26 @@ body {
 }
 
 .dexter-button {
-  position: absolute;
-  top: 5em;
-  left: 2.4em;
+  display: flex;
+  margin-top: 5rem;
+  margin-left: 5rem;
 }
 
 .dexter-one {
- position: relative;
- top: 5.6em;
- left: 6.5em;
-
+  margin-top: 0.5rem;
+  margin-left: 1rem;
 }
 
 .dexter-two {
-  position: relative;
-  top: 2em;
-  right: 3em;
+  float: right;
+  margin-right: 3rem;
+  margin-top: 1rem;
 }
 
-.dexter-img {
-  position: relative;
-  top: 21vh;
-  left: 41.7vw;
+.dexter-img img{
+  display: block;
+  margin: 0 auto;
+  margin-top: 8rem;
 }
 
 /* iphone 4 size */
