@@ -19,5 +19,8 @@ get '/logout' => 'sessions#destroy'
 get '/signup' => 'users#signup'
 post '/users' => 'users#create'
 
+get '/userchallenges' => 'userchallenges#enroll'
+post '/userchallenges' => 'userchallenges#create'
+
 
 end

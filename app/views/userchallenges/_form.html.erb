@@ -1,27 +1,21 @@
-<%= form_for(userchallenge) do |f| %>
-  <% if challenge.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(userchallenge.errors.count, "error") %> prohibited this challenge from being saved:</h2>
+<!-- <% unless @userchallenge.nil? %> -->
+<% form_for @userchallenge, url: {action: "create"} do |f| %>
 
-      <ul>
-      <% userchallenge.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<% @challenges.each do |c| %>
+<div class="field">
+  <%# f.label @user_id %>
+  <%= f.hidden_field :user_id, value: @user_id %>
+  <%# :user_id = @user_id %>
+  <%# f.integer = @user_id %>
+</div>
 
-  <div class="field">
-    <%= f.label :user_id %>
-    <%= f.integer :user_id %>
-  </div>
+<div class="checkbox">
+  <%= f.label c.name %>
+  <%= f.checkbox :challenge_ids, {multiple: true}, 1, nil %>
+</div>
+<% end %>
 
-  <div class="checkbox" class="form-group">
-    <%= f.label :challenge_id %>
-    <%= f.integer :challenge_id %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<div class="actions">
+  <%= f.submit %>
+</div>
 <% end %>
