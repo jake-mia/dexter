@@ -6,22 +6,22 @@ html, body {
   margin: 0;
   padding: 0;
 }
-.splashlogin {
-border: solid 1px #47495e;
-border-radius: 8px;
-background-color: #e0e2f7; /* #d5d5d5; */
-padding: 30px;
-/* box-shadow: 7px 9px 5px #d1d6d6; */
-}
-
-#inner {
-    width: 90%;
-    margin: 20px auto;
-}
-
-#outter {
-    width: 100%;
-}
+// .splashlogin {
+// border: solid 1px #47495e;
+// border-radius: 8px;
+// background-color: #e0e2f7; /* #d5d5d5; */
+// padding: 30px;
+// /* box-shadow: 7px 9px 5px #d1d6d6; */
+// }
+//
+// #inner {
+//     width: 90%;
+//     margin: 20px auto;
+// }
+//
+// #outter {
+//     width: 100%;
+// }
 
 body {
   background-color: skyblue;
@@ -75,6 +75,12 @@ body {
   color: #fff;
   background: rgba(255,255,255, 0);
   text-decoration: none;
+}
+
+.challenge-links {
+  position: absolute;
+  top: 60rem;
+  left: 60rem;
 }
 
 /* iphone 4 size */
