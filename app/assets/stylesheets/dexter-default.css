@@ -193,12 +193,27 @@ body {
   animation-direction: alternate;
 }
 
-.collar{
+.collar {
   background-color: red;
   height: 1rem;
-  width: 5rem;
+  width: 9rem;
   position: absolute;
-  top: 2rem;
+  top: 42rem;
+  z-index: 100;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+}
+
+.collar-coin {
+  background-color: yellow;
+  height: 2.4rem;
+  width:  3rem;
+  border-radius: 30px;
+  position: absolute;
+  top: 43rem;
+  left: 63.5rem;
+  z-index: 100;
+  box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
