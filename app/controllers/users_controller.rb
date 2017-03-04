@@ -8,7 +8,7 @@ def index
      @user = User.find(session[:user_id])
      @challenges = @user.challenges
    end
-  
+
 end
 
 def signup

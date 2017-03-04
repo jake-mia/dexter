@@ -4,7 +4,7 @@ class UserchallengesController < ApplicationController
   def enroll
     @user_id = User.find(session[:user_id])
     @challenges = Challenge.all
-    @userchallenge = UserChallenge.create
+    @userchallenge = UserChallenge.new
   end
 
   def create

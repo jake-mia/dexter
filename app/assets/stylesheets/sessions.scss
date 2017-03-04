@@ -2,6 +2,31 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.userchalcontainer {
+  display: flex;
+  position: relative;
+  border: solid 0px black;
+  display: flex;
+  flex-direction: column;
+}
+
+.userchalrow {
+  border: solid 0px black;
+  width: 100%;
+}
+
+.userchalrow:hover {
+  background: #eddaef;
+  width: 100%;
+}
+
+.userchalitem {
+  float: left;
+  border: solid 0px black;
+  width: 25%;
+  padding: 5px;
+}
+
 html, body {
   margin: 0;
   padding: 0;

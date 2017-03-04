@@ -1,15 +1,18 @@
-<table class="table table-hover">
+
+<div class="userchalcontainer">
 
 <% @challenges.each do |challenge| %>
-   <tr><td><%= challenge.name %></td>
+   <div class="userchalrow">
+   <div class="userchalitem"><%= challenge.name %></div>
   <%= form_for :user_challenge do |f| %>
-    <div class="field">
+    <!-- div class="field" -->
       <%= f.hidden_field :challenge_id, value: challenge.id %>
+    <!-- /div -->
+    <div class="actions userchalitem">
+       <%= f.submit "Accept", class: 'btn btn-default' %>
     </div>
-    <div class="actions">
-      <td><%= f.submit "Accept", class: 'btn btn-default' %> </td></tr>
-    </div>
+  </div>  <!-- end the row -->
   <% end %>
 <% end %>
 
-</table>
+</div>
