@@ -1,0 +1,226 @@
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  width: 200px;
+}
+
+.left-ear {
+  background-color: saddlebrown;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  right: 50px;
+  bottom: 30px;
+  border-radius: 50px 15px;
+/*   border: 1px solid black; */
+}
+
+.right-ear {
+  background-color: saddlebrown;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 147px;
+  top: -130px;
+  border-radius: 15px 50px;
+/*   border: 1px solid black; */
+}
+
+.head {
+  background-color: tan;
+  height: 200px;
+  width: 300px;
+  padding-top: 23px;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+  position: relative;
+  top: 10rem;
+  z-index: 100;
+}
+
+.right-eye {
+  background-color: white;
+  height: 6.8rem;
+  width: 6rem;
+  border-radius: 25px;
+  border: 1.5px solid darkgrey;
+  position: relative;
+  left: 8.5rem;
+  top: -20rem;
+}
+
+.left-eye {
+  background-color: white;
+  height: 6.8rem;
+  width: 6rem;
+  border-radius: 25px;
+  border: 1.5px solid darkgrey;
+  position: relative;
+  left: -0.7rem;
+  top: -20rem;
+}
+
+.pupil {
+  background-color: black;
+  height: 38px;
+  width: 30px;
+  margin-top: 2em;
+  border-radius: 25px;
+  margin-left: 6px;
+  margin-right: 2px;
+  margin-bottom: 4px;
+}
+
+.snout {
+  background-color: saddlebrown;
+  height: 5.7rem;
+  width: 12rem;
+  border-radius: 30px;
+  position: relative;
+  top: -13rem;
+  right: 4.7rem;
+  box-shadow: 0 5px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nose {
+  background-color: black;
+  height: 2.4rem;
+  width:  3rem;
+  border-radius: 30px;
+  position: relative;
+  top: 0.5rem;
+  left: 2.5rem;
+  box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tongue {
+  background-color: red;
+  height: 2rem;
+  width: 2rem;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+  position: relative;
+  top: 1.2rem;
+  left: 3.2rem;
+  animation-name: tongue-animation;
+  animation-duration: .4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.left-front-leg {
+  background-color: tan;
+  height: 12rem;
+  width: 5.5rem;
+  border-top-right-radius: 25%;
+  border-top-left-radius: 25%;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  display: flex;
+  position: absolute;
+  left: 60rem;
+  top: 40rem;
+  box-shadow: 0 17px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: -1;
+}
+
+.right-front-leg {
+  background-color: tan;
+  height: 12rem;
+  width: 5.5rem;
+  border-top-right-radius: 25%;
+  border-top-left-radius: 25%;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  display: flex;
+  position: absolute;
+  left: 68rem;
+  top: 40rem;
+  box-shadow: 0 17px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.trunk {
+  background-color: tan;
+  height: 8.5rem;
+  width: 20rem;
+  border-top-right-radius: 25%;
+  border-top-left-radius: 25%;
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  display: flex;
+  position: absolute;
+  left: 63rem;
+  top: 39rem;
+  transform: rotate(-14deg);
+}
+
+.back-legs {
+  background-color: tan;
+  height: 11rem;
+  width: 4.5rem;
+  border-top-right-radius: 25%;
+  border-top-left-radius: 25%;
+  border-bottom-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+  display: flex;
+  position: absolute;
+  left: 79rem;
+  top: 39rem;
+  box-shadow: 0 17px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: -1;
+}
+
+.tail {
+  background-color: tan;
+  height: 5.5rem;
+  width: 2rem;
+  border-top-right-radius: 85%;
+  border-bottom-right-radius: 45%;
+  position: absolute;
+  left: 82rem;
+  top: 35rem;
+  transform: rotate(10deg);
+  animation-name: happy;
+  animation-duration: 100ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.collar {
+  background-color: red;
+  height: 1rem;
+  width: 9rem;
+  position: absolute;
+  top: 42rem;
+  z-index: 100;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+}
+
+.collar-coin {
+  background-color: yellow;
+  height: 2.4rem;
+  width:  3rem;
+  border-radius: 30px;
+  position: absolute;
+  top: 43rem;
+  left: 63.5rem;
+  z-index: 100;
+  box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+@keyframes happy {
+    from {transform: rotate(10deg);}
+    to {transform: rotate(30deg);}
+}
+
+@keyframes tongue-animation {
+    from { height: 2rem;}
+    to { height: 1rem;}
+}

@@ -1,0 +1,97 @@
+.sad-head {
+  background-color: tan;
+  height: 200px;
+  width: 300px;
+  padding-top: 23px;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+  position: relative;
+  top: 10rem;
+  z-index: 100;
+  transform: rotate(-14deg);
+  animation-name: confused;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+.sad-right-eye {
+  background-color: white;
+  height: 6.8rem;
+  width: 6rem;
+  border-top-left-radius: 25%;
+  border-top-right-radius: 75%;
+  border-bottom-right-radius: 25%;
+  border-bottom-left-radius: 25%;
+  border: 1.5px solid darkgrey;
+  position: relative;
+  left: 8.5rem;
+  top: -20rem;
+}
+
+.sad-left-eye {
+  background-color: white;
+  height: 6.8rem;
+  width: 6rem;
+  border-top-left-radius: 75%;
+  border-top-right-radius: 25%;
+  border-bottom-right-radius: 25%;
+  border-bottom-left-radius: 25%;
+  border: 1.5px solid darkgrey;
+  position: relative;
+  left: -0.7rem;
+  top: -20rem;
+}
+
+.pupil {
+  background-color: black;
+  height: 38px;
+  width: 30px;
+  margin-top: 2em;
+  border-radius: 25px;
+  margin-left: 6px;
+  margin-right: 2px;
+  margin-bottom: 4px;
+}
+
+.snout {
+  background-color: saddlebrown;
+  height: 5.7rem;
+  width: 12rem;
+  border-radius: 30px;
+  position: relative;
+  top: -13rem;
+  right: 4.7rem;
+  box-shadow: 0 5px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mouth {
+  width: 5px;
+  height: 8px;
+  border-left: 16px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 10px solid black;
+  position: relative;
+  left: 38px;
+  top: 13px;
+}
+
+.sad-tail {
+  background-color: tan;
+  height: 5.5rem;
+  width: 2rem;
+  border-top-right-radius: 85%;
+  border-bottom-right-radius: 45%;
+  position: absolute;
+  left: 82rem;
+  top: 35rem;
+  transform: rotate(10deg);
+}
+
+@keyframes confused {
+    from {transform: rotate(-12deg);}
+    to {transform: rotate(12deg);}
+}
