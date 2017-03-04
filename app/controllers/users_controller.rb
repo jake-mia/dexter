@@ -8,11 +8,22 @@ def index
      @user = User.find(session[:user_id])
      @challenges = @user.challenges
    end
-
 end
 
 def signup
 end
+
+def send_message(phone_number, alert_message, img_url)
+  twilio_number = ENV['TWILIO_NUMBER']
+  client = Twilio::REST::Client.new ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN']
+
+  alert_message = "<<MSG
+  Hello from Dexter!
+  Go to: http://dexter.com for more details.
+  MSG"
+
+end
+
 
 def create
 
