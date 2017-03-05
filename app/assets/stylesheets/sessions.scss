@@ -108,56 +108,15 @@ body {
   left: 56rem;
 }
 
-/* iphone 4 size */
-// #outter-dexter {
-//     position: fixed;
-//     width: 320px;
-//     height: 480px;
-//     background-color: #c6b6c7;
-//     border-radius: 3px;
-// }
-//
-// .row {
-//   display: flex;
-//   float:left;
-// }
-//
-// .dexter-button {
-//   vertical-align: center;
-//   padding-top: 8px;
-//   border: solid 0px black;
-//   margin: 25px 0 0 30px;
-// }
-//
-// .dexter-one {
-//   font-size: 20px;
-//   display: inline-block;
-//   vertical-align: middle;
-//   width: 170px;
-//   padding: 8px;
-//   border: solid 0px black;
-//   margin: 25px 0 0 0;
-// }
-//
-// .dexter-two {
-//   position: absolute;
-//   left: 160px;
-//   top: 4px;
-//   width: 150px;
-//   padding: 8px;
-//   border: solid 0px black;
-//   margin: 0 0 0 0
-// }
-// .plusbutton {
-//   font-size: 150%;
-// }
-//
-// .spacing {
-//   margin-bottom: 10px;
-// }
-//
-// scrollingthing {
-//   height: 600px;
-//   overflow-y: scroll;
-//   position: relative;
-// }
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+.dexter-two {
+    float: right;
+    margin-right: -26rem;
+    margin-top: 3rem;
+  }
+}
