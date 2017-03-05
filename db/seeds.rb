@@ -17,5 +17,35 @@
 #
 #seat = Product.create(name: 'Toilet Seat', image_link: 'http://i376.photobucket.com/albums/oo206/slaglebagel05/Miscellaneous/American-Standard-5910110020-rw-902.jpg', description: 'This toilet seat was used lightly by a strict vegetarian.  Very clean fellow who only eats glutton free things.  This will make a perfect addition to your bathroom or give as a gift!!', price_in_cents: 8000)
 
-fit = Challenge.create(name: 'Fitness', body: '30 Day work out Challenge with Dexters mad skills.')
-food = Challenge.create(name: 'Food', body: '30 Day eating healthy Challenge.  You can only eat health things.')
+# fit = Challenge.create(name: 'Fitness', body: '30 Day work out Challenge with Dexters mad skills.')
+# food = Challenge.create(name: 'Food', body: '30 Day eating healthy Challenge.  You can only eat health things.')
+#
+# step1 = Step.create(challenge_id: 1, name: "Sunday", description: "Did you go sugar free today?")
+
+# 5.times do
+#   Step.create(challenge_id: 1, name: "Monday", description: "Did you go sugar free today?")
+# end
+#
+# 5.times do
+#   Step.create(challenge_id: 1, name: "Tuesday", description: "Did you go sugar free today?")
+# end
+#
+# 4.times do
+#   Step.create(challenge_id: 1, name: "Wednesday", description: "Did you go sugar free today?")
+# end
+#
+# 4.times do
+#   Step.create(challenge_id: 1, name: "Thursday", description: "Did you go sugar free today?")
+# end
+#
+# 4.times do
+#   Step.create(challenge_id: 1, name: "Friday", description: "Did you go sugar free today?")
+# end
+#
+# 4.times do
+#   Step.create(challenge_id: 1, name: "Saturday", description: "Did you go sugar free today?")
+# end
+#
+# 4.times do
+#   Step.create(challenge_id: 1, name: "Sunday", description: "Did you go sugar free today?")
+# end

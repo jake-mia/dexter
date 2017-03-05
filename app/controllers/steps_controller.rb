@@ -14,7 +14,8 @@ class StepsController < ApplicationController
 
   # GET /steps/new
   def new
-    @step = Step.new
+    @challenge = Challenge.find(params[:challenge_id])
+    @step = @challenge.steps.new
   end
 
   # GET /steps/1/edit
@@ -69,6 +70,6 @@ class StepsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def step_params
-      params.require(:step).permit(:Challenge_id, :name, :completed)
+      params.require(:step).permit(:Challenge_id, :name, :completed, :description)
     end
 end

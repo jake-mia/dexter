@@ -1,4 +1,4 @@
-<%= form_for(step) do |f| %>
+<%= form_for [@challenge, @step] do |f| %>
   <% if step.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(step.errors.count, "error") %> prohibited this step from being saved:</h2>
@@ -11,9 +11,12 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :Challenge_id %>
-    <%= f.text_field :Challenge_id %>
+
+<!-- **** STEP ONE ******* -->
+<div class="step-one">
+  <div class="hidden-field">
+    <%= f.hidden_field :challenge_id %>
+    <%= f.hidden_field :challenge_id %>
   </div>
 
   <div class="field">
@@ -29,4 +32,114 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+</div>
+  <!-- **** STEP TWO ******* -->
+  <div class="step-two">
+    <div class="hidden-field">
+      <%= f.hidden_field :challenge_id %>
+      <%= f.hidden_field :challenge_id %>
+    </div>
+
+    <div class="field">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+
+    <div class="field">
+      <%= f.label :completed %>
+      <%= f.check_box :completed %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  </div>
+
+    <!-- **** STEP THREE ******* -->
+    <div class="step-three">
+      <div class="hidden-field">
+        <%= f.hidden_field :challenge_id %>
+        <%= f.hidden_field :challenge_id %>
+      </div>
+
+      <div class="field">
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+      </div>
+
+      <div class="field">
+        <%= f.label :completed %>
+        <%= f.check_box :completed %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+    </div>
+
+      <!-- **** STEP FOUR ******* -->
+     <div class="step-four">
+        <div class="hidden-field">
+          <%= f.hidden_field :challenge_id %>
+          <%= f.hidden_field :challenge_id %>
+        </div>
+
+        <div class="field">
+          <%= f.label :name %>
+          <%= f.text_field :name %>
+        </div>
+
+        <div class="field">
+          <%= f.label :completed %>
+          <%= f.check_box :completed %>
+        </div>
+
+        <div class="actions">
+          <%= f.submit %>
+        </div>
+      </div>
+
+        <!-- **** STEP FIVE ******* -->
+        <div class="step-five">
+          <div class="hidden-field">
+            <%= f.hidden_field :challenge_id %>
+            <%= f.hidden_field :challenge_id %>
+          </div>
+
+          <div class="field">
+            <%= f.label :name %>
+            <%= f.text_field :name %>
+          </div>
+
+          <div class="field">
+            <%= f.label :completed %>
+            <%= f.check_box :completed %>
+          </div>
+
+          <div class="actions">
+            <%= f.submit %>
+          </div>
+        </div>
+
+          <!-- **** STEP SIX******* -->
+          <div class="step-six">
+            <div class="hidden-field">
+              <%= f.hidden_field :challenge_id %>
+              <%= f.hidden_field :challenge_id %>
+            </div>
+
+            <div class="field">
+              <%= f.label :name %>
+              <%= f.text_field :name %>
+            </div>
+
+            <div class="field">
+              <%= f.label :completed %>
+              <%= f.check_box :completed %>
+            </div>
+
+            <div class="actions">
+              <%= f.submit %>
+            </div>
+          </div>
 <% end %>

@@ -1,45 +1,51 @@
 
+/* LAPTOPS */
+/*@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+}*/
 
 .container {
   display: flex;
   justify-content: center;
-  margin-top: 2em;
-  width: 200px;
+  margin-top: 2rem;
+  width: 20rem;
+  position: relative;
+
 }
 
 .left-ear {
   background-color: saddlebrown;
-  height: 100px;
-  width: 100px;
+  height: 10rem;
+  width: 10rem;
   position: relative;
-  right: 50px;
-  bottom: 30px;
-  border-radius: 50px 15px;
+  right: 5rem;
+  bottom: 3rem;
+  border-radius: 5rem 1.5rem;
 /*   border: 1px solid black; */
 }
 
 .right-ear {
   background-color: saddlebrown;
-  height: 100px;
-  width: 100px;
+  height: 10rem;
+  width: 10rem;
   position: relative;
-  left: 147px;
-  top: -130px;
-  border-radius: 15px 50px;
+  left: 14.7rem;
+  top: -13rem;
+  border-radius: 1.5rem 5rem;
 /*   border: 1px solid black; */
 }
 
 .head {
   background-color: tan;
-  height: 200px;
-  width: 300px;
-  padding-top: 23px;
+  height: 19rem;
+  width: 19rem;
+  padding-top: 2.3rem;
   border-top-left-radius: 40%;
   border-top-right-radius: 40%;
   border-bottom-left-radius: 45%;
   border-bottom-right-radius: 45%;
-  position: relative;
-  top: 10rem;
   z-index: 100;
 }
 
@@ -47,8 +53,8 @@
   background-color: white;
   height: 6.8rem;
   width: 6rem;
-  border-radius: 25px;
-  border: 1.5px solid darkgrey;
+  border-radius: 2.5rem;
+  border: 0.15rem solid darkgrey;
   position: relative;
   left: 8.5rem;
   top: -20rem;
@@ -58,8 +64,8 @@
   background-color: white;
   height: 6.8rem;
   width: 6rem;
-  border-radius: 25px;
-  border: 1.5px solid darkgrey;
+  border-radius: 2.5rem;
+  border: 0.15rem solid darkgrey;
   position: relative;
   left: -0.7rem;
   top: -20rem;
@@ -67,7 +73,7 @@
 
 .pupil {
   background-color: black;
-  height: 38px;
+  height: 3.8rem;
   width: 30px;
   margin-top: 2em;
   border-radius: 25px;
@@ -113,6 +119,9 @@
   animation-direction: alternate;
 }
 
+.dex-body {
+  position: relative;
+}
 .left-front-leg {
   background-color: tan;
   height: 12rem;
@@ -122,9 +131,9 @@
   border-bottom-right-radius: 20%;
   border-bottom-left-radius: 20%;
   display: flex;
-  position: absolute;
-  left: 60rem;
-  top: 40rem;
+  position: relative;
+  left: -16rem;
+  top: 18rem;
   box-shadow: 0 17px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: -1;
 }
@@ -138,9 +147,9 @@
   border-bottom-right-radius: 20%;
   border-bottom-left-radius: 20%;
   display: flex;
-  position: absolute;
-  left: 68rem;
-  top: 40rem;
+  position: relative;
+  left: -7rem;
+  top: 6rem;
   box-shadow: 0 17px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -153,27 +162,28 @@
   border-bottom-right-radius: 5%;
   border-bottom-left-radius: 5%;
   display: flex;
-  position: absolute;
-  left: 63rem;
-  top: 39rem;
+  position: relative;
+  left: -12rem;
+  top: -8rem;
   transform: rotate(-14deg);
 }
 
 .back-legs {
   background-color: tan;
   height: 11rem;
-  width: 4.5rem;
+  width: 5.3rem;
   border-top-right-radius: 25%;
   border-top-left-radius: 25%;
   border-bottom-right-radius: 20%;
   border-bottom-left-radius: 20%;
   display: flex;
-  position: absolute;
-  left: 79rem;
-  top: 39rem;
+  position: relative;
+  left: 3.4rem;
+  top: -18rem;
   box-shadow: 0 17px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: -1;
 }
+
 
 .tail {
   background-color: tan;
@@ -181,9 +191,9 @@
   width: 2rem;
   border-top-right-radius: 85%;
   border-bottom-right-radius: 45%;
-  position: absolute;
-  left: 82rem;
-  top: 35rem;
+  position: relative;
+  left: 6rem;
+  top: -33rem;
   transform: rotate(10deg);
   animation-name: happy;
   animation-duration: 100ms;
@@ -191,11 +201,12 @@
   animation-direction: alternate;
 }
 
+
 .collar {
   background-color: red;
   height: 1rem;
   width: 9rem;
-  position: absolute;
+  position: ;
   top: 42rem;
   z-index: 100;
   border-bottom-left-radius: 45%;
@@ -207,7 +218,7 @@
   height: 2.4rem;
   width:  3rem;
   border-radius: 30px;
-  position: absolute;
+  position: relative;
   top: 43rem;
   left: 63.5rem;
   z-index: 100;
