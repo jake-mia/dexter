@@ -31,22 +31,6 @@ html, body {
   margin: 0;
   padding: 0;
 }
-// .splashlogin {
-// border: solid 1px #47495e;
-// border-radius: 8px;
-// background-color: #e0e2f7; /* #d5d5d5; */
-// padding: 30px;
-// /* box-shadow: 7px 9px 5px #d1d6d6; */
-// }
-//
-// #inner {
-//     width: 90%;
-//     margin: 20px auto;
-// }
-//
-// #outter {
-//     width: 100%;
-// }
 
 body {
   background-color: skyblue;
@@ -71,8 +55,8 @@ body {
 }
 
 .dexter-one {
-  margin-top: 0.5rem;
-  margin-left: 1rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
 }
 
 .dexter-two {
@@ -118,5 +102,26 @@ body {
     float: right;
     margin-right: -26rem;
     margin-top: 3rem;
+    font-size: 3.5rem;
   }
+.dexter-one {
+  margin-top: 8rem;
+  margin-left: 3rem;
+  font-size: 4rem;
+  }
+
+.top-button {
+    margin-top: 11rem;
+    margin-left: 3rem;
+}
+  // .dexter-button {
+  //   display: flex;
+  //   margin-top: 5rem;
+  //   margin-left: 5rem;
+  // }
+  //
+  // .top-button {
+  //   margin-top: 9rem;
+  //   margin-left: 2rem;
+  // }
 }
