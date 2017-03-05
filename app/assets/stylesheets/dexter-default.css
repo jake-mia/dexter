@@ -329,4 +329,16 @@
     left: 56rem;
     font-size: 2rem;
   }
+
+  .dexter-button {
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 6rem;
+  }
+
+  .dexter-two {
+    float: right;
+    margin-right: -24rem;
+    margin-top: 3rem;
+  }
 }

@@ -1,3 +1,3 @@
 class Step < ApplicationRecord
-  belongs_to :Challenge
+  belongs_to :challenge
 end

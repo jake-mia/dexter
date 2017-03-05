@@ -1,4 +1,4 @@
-<%= form_for [@challenge, @step] do |f| %>
+<%= form_for [@challenge, @step] do |f|, remote: true %>
   <% if step.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(step.errors.count, "error") %> prohibited this step from being saved:</h2>
