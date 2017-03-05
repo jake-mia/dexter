@@ -206,11 +206,13 @@
   background-color: red;
   height: 1rem;
   width: 9rem;
-  position: ;
-  top: 42rem;
+  position: absolute;
+  top: 18.5rem;
+  left: -4rem;
   z-index: 100;
   border-bottom-left-radius: 45%;
   border-bottom-right-radius: 45%;
+  box-shadow: 0 15px 60px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .collar-coin {
@@ -218,13 +220,12 @@
   height: 2.4rem;
   width:  3rem;
   border-radius: 30px;
-  position: relative;
-  top: 43rem;
-  left: 63.5rem;
+  position: absolute;
+  top: 19.4rem;
+  left: -1.5rem;
   z-index: 100;
   box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 @keyframes happy {
     from {transform: rotate(10deg);}
