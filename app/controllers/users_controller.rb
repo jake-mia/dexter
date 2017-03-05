@@ -1,18 +1,42 @@
 class UsersController < ApplicationController
 #before_action :authorize, only: [:index]
 #before_action :authorize :redirect_unless_logged_in, only: [:show, :edit]
-
+require 'twilio-ruby'
 # this could be the unloggedin page if you want one
 def index
    if current_user
      @user = User.find(session[:user_id])
      @challenges = @user.challenges
    end
-
+   @var = User.find(session[:user_id])
+   @phone = @var.phone
+   @alert = "Welcome to the Dexter app!"
+   @img = ""
+   #send_message(@phone, @alert, @img)
 end
 
 def signup
 end
+
+def send_message(phone_number, alert_message, img_url)
+  twilio_number = ENV['TWILIO_NUMBER']
+  client = Twilio::REST::Client.new ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN']
+
+  client.messages.create(
+        from: twilio_number,
+        to:   phone_number,
+        body: alert_message,
+        # US phone numbers can make use of an image as well
+        # media_url: image_url
+      )
+
+  #alert_message = "<<MSG
+  #Hello from Dexter!
+  #Go to: http://dexter.com for more details.
+  #MSG"
+
+end
+
 
 def create
 
@@ -33,7 +57,7 @@ end
   private
 
     def user_params
-      params.require(:user).permit(:firstname, :lastname, :email, :password, :password_confirmation)
+      params.require(:user).permit(:firstname, :lastname, :email, :password, :password_confirmation, :phone)
     end
 
     # def redirect_unless_logged_in
