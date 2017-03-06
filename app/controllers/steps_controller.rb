@@ -4,12 +4,13 @@ class StepsController < ApplicationController
   # GET /steps
   # GET /steps.json
   def index
-    @steps = Step.all
+    @steps = Step.where(challenge_id: params[:challenge_id])
   end
 
   # GET /steps/1
   # GET /steps/1.json
   def show
+
   end
 
   # GET /steps/new
