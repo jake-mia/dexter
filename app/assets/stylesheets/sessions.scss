@@ -15,8 +15,13 @@
   width: 100%;
 }
 
+.userchaltitle {
+  border: solid 0px black;
+  width: 100%;
+}
+
 .userchalrow:hover {
-  background: #eddaef;
+  background: #adf3f7;  /* #eddaef; */
   width: 100%;
 }
 
@@ -26,6 +31,52 @@
   width: 25%;
   padding: 5px;
 }
+
+.userchalitem2 {
+  float: left;
+  border: solid 0px black;
+  width: 10%;
+  padding: 5px;
+}
+
+
+.stepscontainer {
+  display: flex;
+  position: relative;
+  border: solid 0px black;
+  display: flex;
+  flex-direction: column;
+}
+
+.stepsrow {
+  border: solid 0px black;
+  width: 100%;
+}
+
+.stepstitle {
+  border: solid 0px black;
+  width: 100%;
+}
+
+.stepsrow:hover {
+  background: #adf3f7;  /* #eddaef; */
+  width: 100%;
+}
+
+.stepsitem {
+  float: left;
+  border: solid 0px black;
+  width: 10%;
+  padding: 5px;
+}
+
+.stepsitem2 {
+  float: left;
+  border: solid 0px black;
+  width: 20%;
+  padding: 5px;
+}
+
 
 html, body {
   margin: 0;
