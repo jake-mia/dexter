@@ -44,7 +44,7 @@
 .right-eye {
   background-color: white;
   height: 6.8rem;
-  width: 6rem;
+  width: 7rem;
   border-radius: 2.5rem;
   border: 0.15rem solid darkgrey;
   position: relative;
@@ -55,7 +55,7 @@
 .left-eye {
   background-color: white;
   height: 6.8rem;
-  width: 6rem;
+  width: 7rem;
   border-radius: 2.5rem;
   border: 0.15rem solid darkgrey;
   position: relative;
@@ -69,8 +69,7 @@
   width: 30px;
   margin-top: 2em;
   border-radius: 25px;
-  margin-left: 6px;
-  margin-right: 2px;
+  margin-left: 8px;
   margin-bottom: 4px;
 }
 
@@ -228,6 +227,7 @@
     from { height: 2rem;}
     to { height: 1rem;}
 }
+
 
 /* ----------- iPhone 4 and 4S ----------- */
 

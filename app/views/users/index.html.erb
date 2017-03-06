@@ -17,6 +17,7 @@
 <!-- <%= render 'sad-dexter' %> -->
 <!-- <%= render 'dexter-happy' %> -->
 <% if current_user %>
+<div class="challenge-header">My Challenges</div>
 <div class="challenge-links">
   <% @challenges.each do |chal| %>
   <%#= chal.user_id %>
