@@ -1,33 +1,33 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Steps</h1>
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th>Challenge</th>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Complete_by<th>
-      <th>Completed</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
+<h1>Steps</h1>
+<div class="stepscontainer">
+
+    <div class="stepstitle">
+      <b>
+      <div class="stepsitem">Challenge</div>
+      <div class="stepsitem">Name</div>
+      <div class="stepsitem2">Description</div>
+      <div class="stepsitem2">Complete_by</div>
+      <div class="stepsitem">Completed</div>
+      </b>
+    </div>
+
     <% @steps.each do |step| %>
-      <tr>
-        <td><%= step.challenge_id %></td>
-        <td><%= step.name %></td>
-        <td><%= step.description %></td>
-        <td><%= step.complete_by %></td>
-        <td><%= step.completed %></td>
-        <td><%#= link_to 'Show', challenge_step_path(step) %></td>
-        <td><%#= link_to 'Edit', edit_step_path(step) %></td>
-        <td><%= link_to 'Destroy', step, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <div class="stepsrow">
+        <div class="stepsitem"><%= step.challenge_id %></div>
+        <div class="stepsitem"><%= step.name %></div>
+        <div class="stepsitem2"><%= step.description %></div>
+        <div class="stepsitem2"><%= step.complete_by %></div>
+        <div class="stepsitem"><%= step.completed %></div>
+        <!-- div class="userchalitem2"><%#= link_to 'Show', challenge_step_path(step) %></div> -->
+        <!-- div class="userchalitem2"><%#= link_to 'Edit', edit_step_path(step) %></div> -->
+        <div class="userchalitem2"><%= link_to 'Destroy', step, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+      </div>
     <% end %>
-  </tbody>
-</table>
+
+</div>
 
 <br>
 
