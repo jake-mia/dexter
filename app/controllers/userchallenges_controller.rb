@@ -9,6 +9,7 @@ class UserchallengesController < ApplicationController
 
   def create
     @userchallenge = current_user.user_challenges.create!(userchallenge_params)
+    #create the steps
     redirect_to root_path, notice: "Challenge Accepted!"
   end
 

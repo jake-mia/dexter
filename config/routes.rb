@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  
+  resources :steps
+
   resources :challenges do
   resources :steps
 end

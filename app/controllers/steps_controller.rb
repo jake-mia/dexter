@@ -14,8 +14,11 @@ class StepsController < ApplicationController
 
   # GET /steps/new
   def new
+    @steps = Step.new
     @challenge = Challenge.find(params[:challenge_id])
-    @step = @challenge.steps.new
+
+    #@challenge = Challenge.find(params[:challenge_id])
+    #@step = @challenge.steps.new
   end
 
   # GET /steps/1/edit
