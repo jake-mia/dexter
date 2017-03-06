@@ -11,7 +11,7 @@ class UserchallengesController < ApplicationController
   def create
     @userchallenge = current_user.user_challenges.create!(userchallenge_params)
     #create the steps
-   challenge = Challenge.find(params[:user_challenge][:challenge_id])
+    challenge = Challenge.find(params[:user_challenge][:challenge_id])
     message = "challenge is nil!!!"
     raise new RuntimeError.new message if challenge.nil?
     challenge_name = challenge.name

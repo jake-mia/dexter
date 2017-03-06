@@ -10,6 +10,7 @@ class StepsController < ApplicationController
   # GET /steps/1
   # GET /steps/1.json
   def show
+    byebug
   end
 
   # GET /steps/new
