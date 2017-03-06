@@ -5,6 +5,8 @@ class ChallengesController < ApplicationController
   # GET /challenges.json
   def index
     @challenges = Challenge.all
+    message = "@challenges is nil!"
+    raise RuntimeError.new message if @challenges.nil?
   end
 
   # GET /challenges/1
