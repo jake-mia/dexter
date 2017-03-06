@@ -8,34 +8,34 @@ def index
      @user = User.find(session[:user_id])
      @challenges = @user.challenges
    end
-  @var = User.find(session[:user_id])
-  @phone = @var.phone
-  @alert = "Welcome to the Dexter app!"
-  @img = ""
+  # @var = User.find(session[:user_id])
+  # @phone = @var.phone
+  # @alert = "Welcome to the Dexter app!"
+  # @img = ""
   #send_message(@phone, @alert, @img)
 end
 
 def signup
 end
 
-def send_message(phone_number, alert_message, img_url)
-   twilio_number = ENV['TWILIO_NUMBER']
-   client = Twilio::REST::Client.new ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN']
-
-   client.messages.create(
-         from: twilio_number,
-         to:   phone_number,
-         body: alert_message,
-         # US phone numbers can make use of an image as well
-         # media_url: image_url
-       )
-
-  #alert_message = "<<MSG
-  #Hello from Dexter!
-  #Go to: http://dexter.com for more details.
-  #MSG"
-
-end
+# def send_message(phone_number, alert_message, img_url)
+#    twilio_number = ENV['TWILIO_NUMBER']
+#    client = Twilio::REST::Client.new ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN']
+#
+#    client.messages.create(
+#          from: twilio_number,
+#          to:   phone_number,
+#          body: alert_message,
+#          # US phone numbers can make use of an image as well
+#          # media_url: image_url
+#        )
+#
+#   #alert_message = "<<MSG
+#   #Hello from Dexter!
+#   #Go to: http://dexter.com for more details.
+#   #MSG"
+#
+# end
 
 
 def create

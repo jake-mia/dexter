@@ -22,9 +22,9 @@
 
 # step1 = Step.create(challenge_id: 1, name: "Sunday", description: "Did you go sugar free today?")
 
-5.times do
-  Step.create(challenge_id: 16, name: "Monday", description: "Did you go sugar free today?")
-end
+# 5.times do
+#   Step.create(challenge_id: 16, name: "Monday", description: "Did you go sugar free today?")
+# end
 #
 # 5.times do
 #   Step.create(challenge_id: 1, name: "Tuesday", description: "Did you go sugar free today?")
