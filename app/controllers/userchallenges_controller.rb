@@ -41,6 +41,7 @@ class UserchallengesController < ApplicationController
     step_args.each do |challenge_name, step_args|
       challenge = Challenge.find_by(name: challenge_name)
       user_challenge = UserChallenge.find_by(challenge: challenge, user: user)
+      #user_challenge = UserChallenge.last
       message = "user challenge is nil!!!"
       raise RuntimeError.new message if user_challenge.nil?
       step_args.each do |args|
