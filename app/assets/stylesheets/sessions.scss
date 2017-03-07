@@ -77,14 +77,14 @@
   width: 20%;
   padding: 5px;
 }
- 
+
 html, body {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: skyblue;
+  background-color: lightskyblue;
 }
 
 .login-button {
@@ -114,6 +114,7 @@ body {
   float: right;
   margin-right: 3rem;
   margin-top: 1rem;
+  color: steelblue;
 }
 
 .dexter-img img {
@@ -142,11 +143,12 @@ body {
   top: -1rem;
   left: 56rem;
 }
+
 .challenge-links {
+  // font-size: 1.5rem;
   position: relative;
-  font-size: 2.5rem;
-  top: -1rem;
-  left: 56rem;
+  top: 8rem;
+  left: -6rem;
 }
 
 @media only screen
@@ -161,6 +163,7 @@ body {
     margin-top: 3rem;
     font-size: 3.5rem;
   }
+
 .dexter-one {
   margin-top: 8rem;
   margin-left: 3rem;

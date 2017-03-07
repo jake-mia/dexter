@@ -323,12 +323,6 @@
     box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-  .challenge-links {
-    position: relative;
-    top: -1rem;
-    left: 56rem;
-    font-size: 2rem;
-  }
 
   .dexter-button {
     display: flex;

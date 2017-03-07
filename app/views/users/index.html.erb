@@ -5,17 +5,15 @@
       <%= current_user.lastname.capitalize %> | <%= link_to "Logout", '/logout' %>
     </div>
   <div class="dexter-button">
-    <a href="/userchallenges">
+    <a href="/challenges">
       <i class="fa fa-plus-circle fa-4x"></i>
     <div class="dexter-one">
       Add A<br>Challenge
     </div>
   </a>
-
   </div>
-<%= render 'dexter-default' %>
-<!-- <%= render 'sad-dexter' %> -->
-<!-- <%= render 'dexter-happy' %> -->
+<!-- <%= render 'dexter-default' %> -->
+<%= render 'sad-dexter' %>
 
 <% if current_user %>
   <div class="challenge-links">
