@@ -49,3 +49,62 @@
 # 4.times do
 #   Step.create(challenge_id: 1, name: "Sunday", description: "Did you go sugar free today?")
 # end
+
+step_args  = {
+  "Healthy Eating" => [
+      {
+        name: "foo",
+        description: "foo info",
+        completed: false,
+        complete_by: Time.now.utc,
+        Tmsg: "he-1"
+      },
+      {
+        name: "bar",
+        description: "bar info",
+        completed: false,
+        complete_by: Time.now.utc,
+        Tmsg: "he-2"
+      },
+      {
+        name: "waz",
+        description: "waz info",
+        completed: false,
+        complete_by: Time.now.utc,
+        Tmsg: "he-3"
+      },
+    ], # end of first set of steps args
+  "Fitness" => [
+    {
+      name: "foo Fitness",
+      description: "foo Fitness info",
+      completed: false,
+      complete_by: Time.now.utc,
+      Tmsg: "f-1"
+    },
+    {
+      name: "bar Fitness",
+      description: "bar Fitness info",
+      completed: false,
+      complete_by: Time.now.utc,
+      Tmsg: "f-2"
+    },
+    {
+      name: "waz Fitness",
+      description: "waz Fitness info",
+      completed: false,
+      complete_by: Time.now.utc,
+      Tmsg: "f-3 test message here"
+    },
+  ],
+}
+
+step_args.each do |challenge_name, steps|
+  c = Challenge.find_by(name: challenge_name)
+  if c.nil?
+    c = Challenge.create(name: challenge_name)
+    steps.each do |step|
+      c.steps.create(step)
+    end
+  end
+end

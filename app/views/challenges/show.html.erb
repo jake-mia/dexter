@@ -1,14 +1,42 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
   <%= @challenge.name %>
-</p>
-
-<p>
-  <strong>Body:</strong>
   <%= @challenge.body %>
 </p>
 
-<%= link_to 'Edit', edit_challenge_path(@challenge) %> |
-<%= link_to 'Back', challenges_path %>
+<p id="notice"><%= notice %></p>
+
+
+<h1>New ERD 2.0 Steps</h1>
+<div class="stepscontainer">
+
+    <div class="stepstitle">
+      <b>
+      <div class="stepsitem">Challenge</div>
+      <div class="stepsitem">Name</div>
+      <div class="stepsitem2">Description</div>
+      <div class="stepsitem2">Complete_by</div>
+      <div class="stepsitem">Completed</div>
+      </b>
+    </div>
+
+    <% current_user.user_challenges_for(@challenge).each do |ucs| %>
+      <div class="stepsrow">
+        <div class="stepsitem"><%= ucs.challenge.name %></div>
+        <div class="stepsitem"><%= ucs.step.name %></div>
+        <div class="stepsitem2"><%= ucs.step.description %></div>
+        <div class="stepsitem2"><%= ucs.complete_by %></div>
+        <div class="stepsitem"><%= ucs.completed %></div>
+        <!-- div class="userchalitem2"><%#= link_to 'Show', challenge_step_path(step) %></div> -->
+        <!-- div class="userchalitem2"><%#= link_to 'Edit', edit_step_path(step) %></div> -->
+        <div class="userchalitem2"><%= link_to 'Ignore', ucs, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+        <div class="userchalitem2"><%= link_to 'Complete', '#' %></div>
+      </div>
+    <% end %>
+
+</div>
+
+
+<%# link_to 'Edit', edit_challenge_path(@challenge) %>
+<%= link_to 'Back', root_path %>

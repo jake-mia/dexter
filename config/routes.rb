@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
 
-  
+  resources :user_challenges
   resources :steps
 
   resources :challenges do
-  resources :steps
-end
+    resources :steps
+  end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
@@ -22,8 +22,8 @@ get '/logout' => 'sessions#destroy'
 get '/signup' => 'users#signup'
 post '/users' => 'users#create'
 
-get '/userchallenges' => 'userchallenges#enroll'
-post '/userchallenges' => 'userchallenges#create'
+#get '/userchallenges' => 'userchallenges#enroll'
+#post '/userchallenges' => 'userchallenges#create'
 
 
 end
