@@ -12,7 +12,7 @@
 
 .welcome {
   color: white;
-  font-family: Helvetica;
+  font-family: 'Patua One', cursive;
   position: relative;
   top: -48rem;
   left: 18rem;
@@ -20,7 +20,7 @@
 }
 
 .join {
-  font-family: Helvetica;
+  font-family: 'Patua One', cursive;
   color: white;
   position: relative;
   top: -58.8rem;
@@ -30,14 +30,39 @@
 .login-button {
   position: relative;
   bottom: 47rem;
-  left: 26rem;
+  left: 22rem;
+  border-style: solid;
+  border-width: 0.5rem;
+  border-color: white;
+  height: 5rem;
+  width: 9rem;
+  padding-left: 1.5rem;
+  padding-right: 3.5rem;
+  padding-top: .5rem;
+
 }
 
 .logout-button {
   position: relative;
   top: -57.5rem;
   left: 78vw;
+  border-style: solid;
+  border-width: 0.5rem;
+  border-color: white;
+  height: 5rem;
+  width: 10.3rem;
+  padding-left: 1.5rem;
+  padding-right: 4rem;
+  padding-top: .5rem;
 }
+
+.log-buttons {
+    color: white;
+    font-family: 'Patua One', cursive;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
 .userchalcontainer {
   display: flex;
   position: relative;
