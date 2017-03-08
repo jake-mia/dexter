@@ -34,7 +34,8 @@
   height: 19rem;
   width: 19rem;
   position: relative;
-  top: -2rem;
+  top: 10rem;
+  left: 4rem;
   bottom: 16rem;
   padding-top: 2.3rem;
   border-top-left-radius: 40%;
@@ -126,8 +127,8 @@
   border-bottom-left-radius: 20%;
   display: flex;
   position: relative;
-  left: -14rem;
-  top: 16rem;
+  left: -10rem;
+  top: 30rem;
   box-shadow: 0 17px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: -1;
 }
@@ -142,8 +143,8 @@
   border-bottom-left-radius: 20%;
   display: flex;
   position: relative;
-  left: -7rem;
-  top: 4rem;
+  left: -3rem;
+  top: 18rem;
   box-shadow: 0 17px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -157,8 +158,9 @@
   border-bottom-left-radius: 5%;
   display: flex;
   position: relative;
-  left: -12rem;
-  top: -9rem;
+  left: -9rem;
+  top: 2.5rem;
+  /*z-index: -100;*/
   transform: rotate(-14deg);
 }
 
@@ -172,8 +174,8 @@
   border-bottom-left-radius: 20%;
   display: flex;
   position: relative;
-  left: 3.4rem;
-  top: -19rem;
+  left: 6.4rem;
+  top: -7.4rem;
   box-shadow: 0 17px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: -1;
 }
@@ -186,8 +188,8 @@
   border-top-right-radius: 85%;
   border-bottom-right-radius: 45%;
   position: relative;
-  left: 6rem;
-  top: -34rem;
+  left: 10rem;
+  top: -23rem;
   transform: rotate(10deg);
   animation-name: happy;
   animation-duration: 100ms;
@@ -201,8 +203,8 @@
   height: 1rem;
   width: 9rem;
   position: absolute;
-  top: 16.5rem;
-  left: -4rem;
+  top: 29rem;
+  left: 1rem;
   z-index: 100;
   border-bottom-left-radius: 45%;
   border-bottom-right-radius: 45%;
@@ -215,8 +217,8 @@
   width:  3rem;
   border-radius: 30px;
   position: absolute;
-  top: 17.4rem;
-  left: -1.5rem;
+  top: 29.9rem;
+  left: 3.5rem;
   z-index: 100;
   box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

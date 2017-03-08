@@ -6,11 +6,11 @@ body {
   background-color: white;
   position: relative;
   top: -40rem;
-  left: 41rem;
+  left: 59rem;
   width: 44rem;
   height: 60rem;
-  border-radius: 10%;
-  opacity: .7;
+  /*border-radius: 10%;*/
+  /*opacity: .7;*/
 }
 
 .signup-banner {
@@ -24,6 +24,7 @@ body {
 }
 
 .signup-head {
+  color: white;
   text-align: center;
   padding-left: 3rem;
   padding-right: 3rem;
