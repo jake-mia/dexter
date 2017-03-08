@@ -1,12 +1,44 @@
+body {
+  background-color: #cdcadf;
+}
+
+#holder  {
+  background-color: white;
+  position: relative;
+  top: -40rem;
+  left: 41rem;
+  width: 44rem;
+  height: 60rem;
+  border-radius: 10%;
+  opacity: .7;
+}
+
+.signup-banner {
+  background-color: lightblue;
+  position: relative;
+  left: -7.5rem;
+  top: -1rem;
+  width: 49rem;
+  height: 6rem;
+}
+
+.signup-head {
+  text-align: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 0.5rem;
+  border-radius: 15%;
+}
+
 .style_image {
   position: relative;
-  bottom: 20rem;
   left: -7rem;
+  top: 31rem;
 }
 
 .login-table {
-  width: 40rem;
-  position: fixed;
-  top: 8rem;
-  left: 3rem;
+  width: 33rem;
+  position: relative;
+  top: 5rem;
+  left: 5rem;
 }
