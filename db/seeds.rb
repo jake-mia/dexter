@@ -19,33 +19,3 @@
 
 # fit = Challenge.create(name: 'Fitness', body: '30 Day work out Challenge with Dexters mad skills.')
 # food = Challenge.create(name: 'Food', body: '30 Day eating healthy Challenge.  You can only eat health things.')
-
-# step1 = Step.create(challenge_id: 1, name: "Sunday", description: "Did you go sugar free today?")
-
-# 5.times do
-#   Step.create(challenge_id: 16, name: "Monday", description: "Did you go sugar free today?")
-# end
-#
-# 5.times do
-#   Step.create(challenge_id: 1, name: "Tuesday", description: "Did you go sugar free today?")
-# end
-#
-# 4.times do
-#   Step.create(challenge_id: 1, name: "Wednesday", description: "Did you go sugar free today?")
-# end
-#
-# 4.times do
-#   Step.create(challenge_id: 1, name: "Thursday", description: "Did you go sugar free today?")
-# end
-#
-# 4.times do
-#   Step.create(challenge_id: 1, name: "Friday", description: "Did you go sugar free today?")
-# end
-#
-# 4.times do
-#   Step.create(challenge_id: 1, name: "Saturday", description: "Did you go sugar free today?")
-# end
-#
-# 4.times do
-#   Step.create(challenge_id: 1, name: "Sunday", description: "Did you go sugar free today?")
-# end

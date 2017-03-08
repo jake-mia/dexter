@@ -1,0 +1,12 @@
+.style_image {
+  position: relative;
+  bottom: 20rem;
+  left: -7rem;
+}
+
+.login-table {
+  width: 40rem;
+  position: fixed;
+  top: 8rem;
+  left: 3rem;
+}
