@@ -97,9 +97,33 @@
 
 .modal-header {
     padding: 15px;
-    border-bottom: 1px solid #e5e5e5;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: none;
 }
 
+.modal-title {
+  color: #191919;
+  margin: 0;
+  line-height: 1.42857143;
+  font-family: 'Patua One', cursive;
+}
+
+.welcome-back {
+  color: white;
+  font-family: 'Patua One', cursive;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.modal-body {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: none;
+}
+
+.modal-footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: none;
+}
 // ************* END MODAL **********************
 
 
