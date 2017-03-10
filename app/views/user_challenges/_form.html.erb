@@ -3,7 +3,7 @@
 <% @challenges.each do |challenge| %>
    <div class="userchalrow">
    <div class="userchalitem"><%= challenge.name %></div>
-  <%= form_for :user_challenge do |f| %>
+  <%= form_for UserChallenge.new do |f| %>
     <!-- div class="field" -->
       <%= f.hidden_field :challenge_id, value: challenge.id %>
     <!-- /div -->

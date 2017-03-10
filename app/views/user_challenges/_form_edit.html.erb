@@ -1,0 +1,20 @@
+<div class="userchalcontainer">
+
+<% @userchallenges.each do |uc| %>
+   <div class="userchalrow">
+   <div class="userchalitem"><%= uc.steps.name %></div>
+   <div class="userchalitem"><%= uc.steps.description %></div>
+   <div class="userchalitem"><%= uc.steps.complete_by %></div>
+  <%= form_for UserChallenge do |f| %>
+    <!-- div class="field" -->
+      <%#= f.hidden_field :challenge_id, value: challenge.id %>
+      <%= f.hidden_field :completed, value: true %>
+    <!-- /div -->
+    <div class="actions userchalitem">
+       <%= f.submit "Mark Complete", class: 'btn btn-default' %>
+    </div>
+  </div>  <!-- end the row -->
+  <% end %>
+<% end %>
+
+</div>

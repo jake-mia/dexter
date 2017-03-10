@@ -5,8 +5,14 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+
 # Use Twilio
 gem 'twilio-ruby'
+# Use delayed job for running background jobs
+gem 'delayed_job_active_record'
+# Need daemons to start delayed_job
+gem 'daemons'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'

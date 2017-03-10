@@ -5,14 +5,17 @@ require 'twilio-ruby'
 # this could be the unloggedin page if you want one
 def index
    if current_user
-     @user = User.find(session[:user_id])
+     @user = current_user
+     @user_challenges = @user.user_challenges.group(:challenge)
+
      @challenges = @user.challenges
+     @var = current_user
+     @phone = @var.phone
+     @alert = "Welcome to the Dexter app!"
+     @img = ""
+     #send_message(@phone, @alert, @img)
    end
-  #  @var = User.find(session[:user_id])
-  #  @phone = @var.phone
-  #  @alert = "Welcome to the Dexter app!"
-  #  @img = ""
-  # send_message(@phone, @alert, @img)
+
 end
 
 def signup

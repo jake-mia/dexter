@@ -18,7 +18,9 @@
   <div class="challenge-links">
     <% @user.uniq_challenges.each do |chal| %>
       <%#= chal.user_id %>
+
       <%= link_to chal.name, challenge_steps_path(chal)  %><br>
+
     <% end %>
 
     <%= image_tag("grass.png", class: "grass") %>
