@@ -282,8 +282,8 @@
     border-bottom-left-radius: 20%;
     display: flex;
     position: relative;
-    left: -7rem;
-    top: 53rem;
+    left: -4rem;
+    top: 65rem;
     box-shadow: 0 17px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
@@ -297,8 +297,8 @@
     border-bottom-left-radius: 20%;
     display: flex;
     position: relative;
-    left: -16rem;
-    top: 65rem;
+    left: -12rem;
+    top: 77rem;
     box-shadow: 0 17px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: -1;
   }
@@ -308,8 +308,8 @@
     height: 1rem;
     width: 9rem;
     position: absolute;
-    top: 65rem;
-    left: 14rem;
+    top: 77rem;
+    left: 18rem;
     z-index: 100;
     border-bottom-left-radius: 45%;
     border-bottom-right-radius: 45%;
@@ -322,8 +322,8 @@
     width: 3rem;
     border-radius: 30px;
     position: absolute;
-    top: 66.7rem;
-    left: 16.5rem;
+    top: 77.7rem;
+    left: 20.5rem;
     z-index: 100;
     box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
@@ -346,3 +346,11 @@
     top: 9rem;
     left: 58rem;
   }
+
+  .grass {
+    position: relative;
+    width: 113%;
+    height: 60rem;
+    left: -5rem;
+    top: 129rem;
+}
