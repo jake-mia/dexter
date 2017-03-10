@@ -370,6 +370,8 @@ body {
   left: 3.6rem;
 }
 
+// ****  MEDIA QUERY *****
+
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 480px)
@@ -393,14 +395,94 @@ body {
     margin-top: 11rem;
     margin-left: 3rem;
 }
-  // .dexter-button {
-  //   display: flex;
-  //   margin-top: 5rem;
-  //   margin-left: 5rem;
-  // }
-  //
-  // .top-button {
-  //   margin-top: 9rem;
-  //   margin-left: 2rem;
-  // }
+
+// *** main page **
+.login-background {
+  background-image: url(dog-mobile.png);
+  width: 129vw;
+  height: 146vh;
+}
+
+.welcome {
+  color: white;
+  font-family: 'Patua One', cursive;
+  position: relative;
+  top: -158rem;
+  left: 6rem;
+  font-size: 6rem;
+  // padding-left: 30rem;
+}
+
+.join {
+  font-family: 'Patua One', cursive;
+  color: white;
+  position: relative;
+  top: -145.7rem;
+  right: -5rem;
+  font-size: 6rem;
+}
+
+.index-footer {
+  background-color: rgba(25, 15, 15, 0.9);
+  height: 74rem;
+  width: 131%;
+  position: relative;
+  top: -23rem;
+  z-index: -1;
+}
+
+.login-button button {
+    background-color: transparent;
+    font-family: 'Patua One', cursive;
+    border: none;
+    color: white;
+    width: 17.3rem;
+    height: 5rem;
+    font-size: 4.5rem;
+    padding-right: 2.5rem;
+    position: relative;
+    top: 0rem;
+    left: 2rem;
+}
+
+.login-button {
+  bottom: 47rem;
+  border-style: solid;
+  border-width: 0.5rem;
+  border-color: white;
+  height: 9rem;
+  width: 21rem;
+  position: relative;
+  top: -156rem;
+  left: 18rem;
+  padding-top: .5rem;
+}
+
+.logout-button button {
+  background-color: transparent;
+  font-family: 'Patua One', cursive;
+  border: none;
+  color: white;
+  width: 11.3rem;
+  height: 12rem;
+  padding-right: 1rem;
+  font-size: 4rem;
+  padding-bottom: 2.5rem;
+  position: relative;
+  left: 3rem;
+  top: 0rem;
+}
+
+.logout-button {
+    position: relative;
+    top: -144.7rem;
+    left: 19vw;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-color: white;
+    height: 15rem;
+    width: 19.3rem;
+    padding-top: .5rem;
+}
+
 }
