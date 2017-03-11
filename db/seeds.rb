@@ -22,22 +22,22 @@
 step_args  = {
   "Healthy Eating" => [
       {
-        name: "foo",
-        description: "foo info",
+        name: "this",
+        description: "is a test",
         completed: false,
         complete_by: Time.now.utc,
         Tmsg: ""
       },
       {
-        name: "bar",
-        description: "bar info",
+        name: "to see what",
+        description: "happens",
         completed: false,
         complete_by: Time.now.utc,
         Tmsg: ""
       },
       {
-        name: "waz",
-        description: "waz info",
+        name: "waasdfadfz",
+        description: "wazasdf info",
         completed: false,
         complete_by: Time.now.utc,
         Tmsg: "he-3 test msg"
@@ -45,21 +45,21 @@ step_args  = {
     ], # end of first set of steps args
   "Fitness" => [
     {
-      name: "foo Fitness",
-      description: "foo Fitness info",
+      name: "foo Fiasdfasdftness",
+      description: "foo Fitadsfadfness info",
       completed: false,
       complete_by: Time.now.utc,
       Tmsg: ""
     },
     {
-      name: "bar Fitness",
-      description: "bar Fitness info",
+      name: "barasdfasdf Fitness",
+      description: "bar Fiasdfasdtness info",
       completed: false,
       complete_by: Time.now.utc,
       Tmsg: ""
     },
     {
-      name: "waz Fitness",
+      name: "waz Fitasdfasdfness",
       description: "waz Fitness info",
       completed: false,
       complete_by: Time.now.utc,
