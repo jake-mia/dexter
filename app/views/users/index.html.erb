@@ -19,7 +19,7 @@
     <% @user.uniq_challenges.each do |chal| %>
       <%#= chal.user_id %>
 
-      <%= link_to chal.name, challenge_steps_path(chal)  %><br>
+      <%= link_to chal.name, chal %><br>
 
     <% end %>
 
