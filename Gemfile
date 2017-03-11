@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+gem 'rails_12factor', group: :production
 # Use Twilio
 gem 'twilio-ruby'
 # Use delayed job for running background jobs
