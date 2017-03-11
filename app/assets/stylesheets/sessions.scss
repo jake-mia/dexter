@@ -217,6 +217,11 @@
 
 // ************* END MODAL **********************
 
+#challenge-page {
+  background-image: image-url(challenges-background);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .userchalcontainer {
   display: flex;
@@ -224,19 +229,20 @@
   border: solid 0px black;
   display: flex;
   flex-direction: column;
-  left: 40rem;
-  top: 2rem;
+  left: 38rem;
+  top: 10rem;
   width: 60rem;
-  border-width: 1rem;
-  border-color: pink;
+  background-color: #44453f;
+  border-radius: 7%;
 }
 
 .userchalrow {
   border: solid 0px black;
   width: 100%;
   padding: 7rem;
-  border-width: 1rem;
-  border-color: pink;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color: white;
 }
 
 .userchaltitle {
@@ -252,7 +258,11 @@
   float: left;
   border: solid 0px black;
   width: 25%;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  // font-family: 'Patua One', cursive;
+
 }
 
 .userchalitem2 {
@@ -399,7 +409,7 @@ body {
 
 // *** main page **
 .login-background {
-  background-image: url(dog-mobile.png);
+  background-image: image-url(dog-mobile);
   width: 129vw;
   height: 146vh;
 }
