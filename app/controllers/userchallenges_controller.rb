@@ -198,22 +198,22 @@ class UserchallengesController < ApplicationController
             complete_by: Time.now.utc
           },
         ], # end of first set of steps args
-      "Food" => [
+      "Water Challenge" => [
         {
-          name: "Day 1",
-          description: "Did you go Sugar-Free today",
+          name: "First glass",
+          description: "Drink 12oz!",
           completed: false,
           complete_by: Time.now.utc
         },
         {
-          name: "Day 2",
-          description: "Did you go Sugar-Free today?",
+          name: "Second Glass",
+          description: "Drink 12oz!",
           completed: false,
           complete_by: Time.now.utc
         },
         {
-          name: "Day 3",
-          description: "Did you go Sugar-Free today",
+          name: "Third Glass",
+          description: "Drink 12oz!",
           completed: false,
           complete_by: Time.now.utc
         },
