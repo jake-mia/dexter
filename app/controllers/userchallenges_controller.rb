@@ -16,7 +16,7 @@ class UserchallengesController < ApplicationController
     raise new RuntimeError.new message if challenge.nil?
     challenge_name = challenge.name
     step_args  = {
-      "Fitness" => [
+      "Running Challenge" => [
           {
             name: "Workout 1",
             description: "4 minute walk, 1 min run. 3 sets",
