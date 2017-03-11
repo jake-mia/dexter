@@ -4,7 +4,6 @@
   margin-top: 2rem;
   width: 20rem;
   position: relative;
-
 }
 
 .left-ear {
@@ -15,7 +14,6 @@
   right: 5rem;
   bottom: 3rem;
   border-radius: 5rem 1.5rem;
-/*   border: 1px solid black; */
 }
 
 .right-ear {
@@ -26,7 +24,6 @@
   left: 14.7rem;
   top: -13rem;
   border-radius: 1.5rem 5rem;
-/*   border: 1px solid black; */
 }
 
 .head {
@@ -117,6 +114,7 @@
 .dex-body {
   position: relative;
 }
+
 .left-front-leg {
   background-color: tan;
   height: 12rem;
@@ -160,7 +158,6 @@
   position: relative;
   left: -9rem;
   top: 2.5rem;
-  /*z-index: -100;*/
   transform: rotate(-14deg);
 }
 
@@ -353,4 +350,5 @@
     height: 60rem;
     left: -5rem;
     top: 129rem;
+  }
 }
