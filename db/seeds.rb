@@ -318,67 +318,67 @@ step_args  = {
       complete_by: Time.now.utc
     },
     {
-      name: "Workout 20",
+      name: "Day 20",
       description: "15 min walk",
       completed: false,
       complete_by: Time.now.utc
     },
     {
-      name: "Workout 21",
+      name: "Day 21",
       description: "1 min walk, 1 min run. 5 sets",
       completed: false,
       complete_by: Time.now.utc
     },
     {
-      name: "Workout 22",
+      name: "Day 22",
       description: "1 min walk, 2 min run. 3 sets",
       completed: false,
       complete_by: Time.now.utc
     },
     {
-      name: "Workout 23",
+      name: "Day 23",
       description: "1 min walk, 3 min run. 3 sets",
       completed: false,
       complete_by: Time.now.utc
     },
     {
-      name: "Workout 24",
+      name: "Day 24",
       description: "15 min walk",
       completed: false,
       complete_by: Time.now.utc
     },
     {
-      name: "Workout 25",
+      name: "Day 25",
       description: "2 min walk, 25 sec sprint. 5 sets",
       completed: false,
       complete_by: Time.now.utc
     },
     {
-      name: "Workout 26",
+      name: "Day 26",
       description: "1 min walk, 4 min run. 3 sets",
       completed: false,
       complete_by: Time.now.utc
     },
     {
-      name: "Workout 27",
+      name: "Day 27",
       description: "2 min walk, 4 min run. 4 sets",
       completed: false,
       complete_by: Time.now.utc
     },
     {
-      name: "Workout 28",
+      name: "Day 28",
       description: "15 min walk",
       completed: false,
       complete_by: Time.now.utc
     },
     {
-      name: "Workout 29",
+      name: "Day 29",
       description: "2 min walk, 5 min run. 3 sets",
       completed: false,
       complete_by: Time.now.utc
     },
     {
-      name: "Workout 30",
+      name: "Day 30",
       description: "2 min walk, 5 min run. 4 sets",
       completed: false,
       complete_by: Time.now.utc
