@@ -1,4 +1,45 @@
-.userchalitem {
+#steps-page {
+  background-image: url(challenges-background);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.steps-container {
+  background-color: #44453f;
+  width: 53rem;
+  padding-top: 1rem;
+  margin-left: 37rem;
+  padding-bottom: 1rem;
+  border-radius: 3rem;
+}
+
+.challenge-title {
+  text-align: center;
+  font-size: 5rem;
+}
+.steps-box {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  align-items: center;
+  border-style: double;
+  border-width: thick;
+  border-color: white;
+  height: 21rem;
+  width: 28rem;
+  margin-left: 13rem;
+  margin-top: 3rem;
+}
+
+.step-text {
+  padding-bottom: .5rem;
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2rem;
+}
+
+/*.userchalitem {
   position: relative;
   left: 11rem;
   border: solid 0px black;
@@ -47,4 +88,4 @@
   border: solid 0px black;
   width: 20%;
   padding: 5px;
-}
+}*/

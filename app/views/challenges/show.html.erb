@@ -1,42 +1,30 @@
+<body id="steps-page">
+
 <p id="notice"><%= notice %></p>
 <p>
-  <h1><%= @challenge.name %></h1><br>
+  <h1 class="challenge-title"><%= @challenge.name %></h1><br>
   <%= @challenge.body %>
 </p>
-
 <br>
-<div class="stepscontainer">
+<div class="steps-container">
+  <% current_user.user_challenges_for(@challenge).each do |ucs| %>
+    <div class="steps-box">
+      <div class="step-text"><%= ucs.step.name.upcase %></div><br>
+      <div class="step-text"><%= ucs.step.description %></div>
+      <div class="step-text"><%= ucs.complete_by %></div>
+      <div class="step-text"><% ucs.completed %></div>
 
-    <div class="stepstitle">
-      <b>
-      <!-- div class="stepsitem">Challenge</div> -->
-      <div class="stepsitem">Step</div>
-      <div class="stepsitem2">Description</div>
-      <div class="stepsitem2">Due Date</div>
-      <div class="stepsitem">Completed</div>
-      </b>
+      <%= form_for ucs do |f| %>
+          <%= f.hidden_field :completed, value: true %>
+        <div class="mark-complete">
+           <%= f.submit "Mark Complete", class: 'btn btn-default' %>
+        </div>
+           <% end %>
+
+      <div class="ignore"><%= link_to 'Ignore', ucs, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+      <!-- div class="userchalitem2"><%= link_to 'Complete', '#' %></div> -->
     </div>
-
-    <% current_user.user_challenges_for(@challenge).each do |ucs| %>
-      <div class="stepsrow">
-        <!-- div class="stepsitem"><%= ucs.challenge.name %></div> -->
-        <div class="stepsitem"><%= ucs.step.name %></div>
-        <div class="stepsitem2"><%= ucs.step.description %></div>
-        <div class="stepsitem2"><%= ucs.complete_by %></div>
-        <div class="stepsitem"><%= ucs.completed %></div>
-
-        <%= form_for ucs do |f| %>
-            <%= f.hidden_field :completed, value: true %>
-          <div class="actions stepsitem2">
-             <%= f.submit "Mark Complete", class: 'btn btn-default' %>
-          </div>
-             <% end %>
-
-        <div class="stepsitem"><%= link_to 'Ignore', ucs, method: :delete, data: { confirm: 'Are you sure?' } %></div>
-        <!-- div class="userchalitem2"><%= link_to 'Complete', '#' %></div> -->
-      </div>
-    <% end %>
-
+  <% end %>
 </div>
 
 
