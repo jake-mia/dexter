@@ -1,8 +1,11 @@
 <body id="challenge-page">
 <div class="challenge-form-background"></div>
-<%= image_tag("wellness.png", :class => "cardio-icon") %>
-<%= image_tag("water.png", :class => "water-icon") %>
 <%= image_tag("weights.png", :class => "weights-icon") %>
+<p class="challenge-descriptions" id="functional-fitness"> Train your body<br>for daily life activities<br> through 30 days of<br> Squats, Push ups, Lunges <br>and Tricep Dips.</p>
+<%= image_tag("wellness.png", :class => "cardio-icon") %>
+<p class="challenge-descriptions" id="running-challenge">Go from <br>walking to running<br> in 30 days! </p>
+<%= image_tag("water.png", :class => "water-icon") %>
+<p class="challenge-descriptions" id="water-challenge"> Increase <br>your metabolism, <br>think clearer and <br>perform better by <br>getting the recommended amount <br>of water every day! </p>
 <div class="userchalcontainer">
 
 <% @challenges.each do |challenge| %>
@@ -18,5 +21,7 @@
   </div>  <!-- end the row -->
   <% end %>
 <% end %>
+
+
 
 </div>

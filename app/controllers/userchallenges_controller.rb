@@ -217,7 +217,37 @@ class UserchallengesController < ApplicationController
           completed: false,
           complete_by: Time.now.utc
         },
-      ],
+        {
+          name: "Fourth glass",
+          description: "Drink 12oz!",
+          completed: false,
+          complete_by: Time.now.utc
+        },
+        {
+          name: "Fifth Glass",
+          description: "Drink 12oz!",
+          completed: false,
+          complete_by: Time.now.utc
+        },
+        {
+          name: "Sixth Glass",
+          description: "Drink 12oz!",
+          completed: false,
+          complete_by: Time.now.utc
+        },
+        {
+          name: "Seventh glass",
+          description: "Drink 12oz!",
+          completed: false,
+          complete_by: Time.now.utc
+        },
+        {
+          name: "Eight Glass",
+          description: "Drink 12oz!",
+          completed: false,
+          complete_by: Time.now.utc
+        }
+      ]
     }.fetch(challenge_name)
     user = User.find(session[:user_id])
     step_args.each do |args|

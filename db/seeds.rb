@@ -20,7 +20,7 @@
 # Remember to clear challenge and steps table to load new
 
 step_args  = {
-  "30 Functional Fitness Challenge" => [
+  "30 Day Functional Fitness Challenge" => [
     {
       name: "Day 1",
       description: "5 push ups | 10 squats",
@@ -399,6 +399,36 @@ step_args  = {
     },
     {
       name: "Third Glass",
+      description: "Drink 12oz!",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Fourth glass",
+      description: "Drink 12oz!",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Fifth Glass",
+      description: "Drink 12oz!",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Sixth Glass",
+      description: "Drink 12oz!",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Seventh glass",
+      description: "Drink 12oz!",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Eight Glass",
       description: "Drink 12oz!",
       completed: false,
       complete_by: Time.now.utc
