@@ -28,7 +28,7 @@ def send_message(phone_number, alert_message)
 
 end
 
-def create_txtmsg
+def create_txt_msg
   var = UserChallenge.all
   var.each do |row|
   step_time = row["complete_by"].to_datetime
