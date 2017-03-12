@@ -1,5 +1,5 @@
-#steps-page {
-  background-image: url(challenges-background);
+.steps-page {
+  /*background-image: image-url(challenges-background);*/
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -8,7 +8,7 @@
   background-color: #44453f;
   width: 53rem;
   padding-top: 1rem;
-  margin-left: 37rem;
+  margin-left: 45rem;
   padding-bottom: 1rem;
   border-radius: 3rem;
 }
