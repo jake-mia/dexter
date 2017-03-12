@@ -6,7 +6,7 @@ class UserChallenge < ApplicationRecord
 
 require 'twilio-ruby'
 
-  def send_message(phone_number, alert_message)
+  def self.send_message(phone_number, alert_message)
      twilio_number = ENV['TWILIO_NUMBER']
      client = Twilio::REST::Client.new ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN']
 
@@ -20,7 +20,7 @@ require 'twilio-ruby'
 
   end
 
-  def create_txt_msg
+  def self.create_txt_msg
     var = UserChallenge.all
     var.each do |row|
     step_time = row["complete_by"].to_datetime
