@@ -1,0 +1,36 @@
+<div class="signup-background"></div>
+
+<div class="scrollingthing" data-spy="scroll">
+  <div id="holder">
+    <div class="login-table">
+        <h1 class="signup-head">Join Us!</h1>
+      </div>
+        <%= form_for :user, url: '/users' do |f| %>
+          <div class="form-group">
+            <b>First Name</b> <%= f.text_field :firstname, class: 'form-control', placeholder: "firstname", autofocus: true %>
+          </div>
+          <div class="form-group">
+            <b>Last Name</b> <%= f.text_field :lastname, class: 'form-control', placeholder: "lastname" %>
+          </div>
+          <div class="form-group">
+            <b>Email</b> <%= f.text_field :email, class: 'form-control', placeholder: "email" %>
+          </div>
+          <div class="form-group">
+            <b>Phone</b> <%= f.text_field :phone, class: 'form-control', placeholder: "XXX-XXX-XXXX" %>
+          </div>
+          <div class="form-group">
+            <b>Password</b> <%= f.password_field :password, class: 'form-control', placeholder: "password" %>
+          </div>
+          <div class="form-group">
+            <b>Password Confirmation</b> <%= f.password_field :password_confirmation, class: 'form-control', placeholder: "password" %>
+          </div>
+          <div class="form-group">
+            <%= f.submit "submit", class: 'signup-submit'%>
+            <%= link_to "cancel", '/', class: 'signup-cancel'%>
+          </div>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+<br><br><center><%= notice %></center>

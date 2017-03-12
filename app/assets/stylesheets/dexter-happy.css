@@ -1,0 +1,28 @@
+.happy-head {
+  background-color: tan;
+  height: 19rem;
+  width: 19rem;
+  position: relative;
+  top: 10rem;
+  left: -5rem;
+  bottom: 16rem;
+  padding-top: 2.3rem;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+  z-index: 100;
+}
+
+.smile {
+  background-color: pink;
+  height: 3rem;
+  width: 4.4rem;
+  position: relative;
+  top: 110px;
+  right: 40px;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}

@@ -4,7 +4,6 @@
   margin-top: 2rem;
   width: 20rem;
   position: relative;
-
 }
 
 .left-ear {
@@ -15,7 +14,6 @@
   right: 5rem;
   bottom: 3rem;
   border-radius: 5rem 1.5rem;
-/*   border: 1px solid black; */
 }
 
 .right-ear {
@@ -26,13 +24,16 @@
   left: 14.7rem;
   top: -13rem;
   border-radius: 1.5rem 5rem;
-/*   border: 1px solid black; */
 }
 
 .head {
   background-color: tan;
   height: 19rem;
   width: 19rem;
+  position: relative;
+  top: 10rem;
+  left: 4rem;
+  bottom: 16rem;
   padding-top: 2.3rem;
   border-top-left-radius: 40%;
   border-top-right-radius: 40%;
@@ -113,6 +114,7 @@
 .dex-body {
   position: relative;
 }
+
 .left-front-leg {
   background-color: tan;
   height: 12rem;
@@ -123,8 +125,8 @@
   border-bottom-left-radius: 20%;
   display: flex;
   position: relative;
-  left: -16rem;
-  top: 18rem;
+  left: -10rem;
+  top: 30rem;
   box-shadow: 0 17px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: -1;
 }
@@ -139,8 +141,8 @@
   border-bottom-left-radius: 20%;
   display: flex;
   position: relative;
-  left: -7rem;
-  top: 6rem;
+  left: -3rem;
+  top: 18rem;
   box-shadow: 0 17px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -154,8 +156,8 @@
   border-bottom-left-radius: 5%;
   display: flex;
   position: relative;
-  left: -12rem;
-  top: -8rem;
+  left: -9rem;
+  top: 2.5rem;
   transform: rotate(-14deg);
 }
 
@@ -169,8 +171,8 @@
   border-bottom-left-radius: 20%;
   display: flex;
   position: relative;
-  left: 3.4rem;
-  top: -18rem;
+  left: 6.3rem;
+  top: -7rem;
   box-shadow: 0 17px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: -1;
 }
@@ -183,8 +185,8 @@
   border-top-right-radius: 85%;
   border-bottom-right-radius: 45%;
   position: relative;
-  left: 6rem;
-  top: -33rem;
+  left: 10rem;
+  top: -22.7rem;
   transform: rotate(10deg);
   animation-name: happy;
   animation-duration: 100ms;
@@ -198,8 +200,8 @@
   height: 1rem;
   width: 9rem;
   position: absolute;
-  top: 18.5rem;
-  left: -4rem;
+  top: 29rem;
+  left: 1rem;
   z-index: 100;
   border-bottom-left-radius: 45%;
   border-bottom-right-radius: 45%;
@@ -212,8 +214,8 @@
   width:  3rem;
   border-radius: 30px;
   position: absolute;
-  top: 19.4rem;
-  left: -1.5rem;
+  top: 29.9rem;
+  left: 3.5rem;
   z-index: 100;
   box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -263,7 +265,7 @@
       display: flex;
       position: relative;
       left: -12rem;
-      top: -8rem;
+      /*top: -8rem;*/
       transform: rotate(-14deg);
     }
 
@@ -277,8 +279,8 @@
     border-bottom-left-radius: 20%;
     display: flex;
     position: relative;
-    left: -7rem;
-    top: 54rem;
+    left: -4rem;
+    top: 65rem;
     box-shadow: 0 17px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
@@ -292,8 +294,8 @@
     border-bottom-left-radius: 20%;
     display: flex;
     position: relative;
-    left: -16rem;
-    top: 66rem;
+    left: -12rem;
+    top: 77rem;
     box-shadow: 0 17px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: -1;
   }
@@ -303,8 +305,8 @@
     height: 1rem;
     width: 9rem;
     position: absolute;
-    top: 67.5rem;
-    left: 14rem;
+    top: 77rem;
+    left: 18rem;
     z-index: 100;
     border-bottom-left-radius: 45%;
     border-bottom-right-radius: 45%;
@@ -317,18 +319,12 @@
     width: 3rem;
     border-radius: 30px;
     position: absolute;
-    top: 68.4rem;
-    left: 16.5rem;
+    top: 77.7rem;
+    left: 20.5rem;
     z-index: 100;
     box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-  .challenge-links {
-    position: relative;
-    top: -1rem;
-    left: 56rem;
-    font-size: 2rem;
-  }
 
   .dexter-button {
     display: flex;
@@ -340,5 +336,19 @@
     float: right;
     margin-right: -24rem;
     margin-top: 3rem;
+  }
+
+  .challenge-links {
+    position: relative;
+    top: 9rem;
+    left: 58rem;
+  }
+
+  .grass {
+    position: relative;
+    width: 113%;
+    height: 60rem;
+    left: -5rem;
+    top: 129rem;
   }
 }

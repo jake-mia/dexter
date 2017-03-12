@@ -1,7 +1,7 @@
 
 <div id="outter-dexter">
 <div class="splashlogin" id="inner">
-<h1>Login</h1>
+<h1 class="welcome-back">Welcome Back!</h1>
 <%= form_tag '/login' do %>
 <div class="form-group">
   <%= label_tag 'email', 'email' %>
@@ -12,8 +12,8 @@
   <%= password_field_tag :password, params[:password], class: 'form-control', placeholder: "password" %>
 </div>
 <div>
-  <%= submit_tag "submit", class: 'btn btn-default btn-lg btn-submit' %>
-  <%= link_to "signup" , '/signup', class: 'btn btn-default btn-lg'%>
+  <%= submit_tag "submit", class: 'submit-signin' %>
+  <%= link_to "cancel" , '/signup', class: 'cancel-signin'%>
 </div>
 <% end %>
 </div>

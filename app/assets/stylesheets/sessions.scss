@@ -2,6 +2,226 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// HEALTH BOX
+
+
+
+// ****** LOGIN / SIGN UP PAGE ******
+
+.login-background {
+  height: 100vh;
+  width: 100vw;
+  background-image: image-url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome {
+  color: white;
+  font-family: 'Patua One', cursive;
+  position: relative;
+  top: -48rem;
+  left: 18rem;
+  // padding-left: 30rem;
+}
+
+.join {
+  font-family: 'Patua One', cursive;
+  color: white;
+  position: relative;
+  top: -59.7rem;
+  right: -100rem;
+}
+
+// ****** END LOGIN / SIGN UP PAGE ******
+
+// *************** MODAL *********************
+
+
+.login-button button {
+  background-color: transparent;
+  font-family: 'Patua One', cursive;
+  border: none;
+  color: white;
+  width: 10.3rem;
+  height: 5rem;
+  font-size: 2rem;
+  padding-right: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.login-button {
+  height: 5rem;
+  width: 9rem;
+  position: relative;
+  bottom: 47rem;
+  left: 23rem;
+  border-style: solid;
+  border-width: 0.5rem;
+  border-color: white;
+  padding-top: .5rem;
+}
+
+.logout-button button {
+  background-color: transparent;
+  font-family: 'Patua One', cursive;
+  border: none;
+  color: white;
+  width: 10.3rem;
+  height: 5rem;
+  padding-right: 1rem;
+  font-size: 2rem;
+  padding-bottom: 2.5rem;
+}
+
+.logout-button {
+  position: relative;
+  top: -58.7rem;
+  left: 74vw;
+  border-style: solid;
+  border-width: 0.5rem;
+  border-color: white;
+  height: 5rem;
+  width: 10.3rem;
+  padding-top: .5rem;
+}
+
+.log-buttons {
+    color: white;
+    font-family: 'Patua One', cursive;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.modal-header {
+    padding: 15px;
+    background-color: #333;
+    border: none;
+}
+
+.modal-title {
+  color: #191919;
+  margin: 0;
+  line-height: 1.42857143;
+  font-family: 'Patua One', cursive;
+}
+
+.welcome-back {
+  color: white;
+  font-family: 'Patua One', cursive;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.modal-body {
+  background-color: #333;
+  border: none;
+}
+
+.modal-footer {
+  background-color: #333;
+  border: none;
+}
+
+.submit-signin {
+  background-color: transparent;
+  font-family: 'Patua One', cursive;
+  border: none;
+  color: white;
+  width: 10.3rem;
+  height: 5rem;
+  font-size: 2rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  left: 13rem;
+  border-style: solid;
+  border-width: 0.5rem;
+}
+
+.cancel-signin {
+  background-color: transparent;
+  font-family: 'Patua One', cursive;
+  border: none;
+  color: white;
+  width: 10.3rem;
+  height: 5.3rem;
+  font-size: 2rem;
+  padding-right: 2rem;
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  position: relative;
+  left: 23rem;
+  border-style: solid;
+  border-width: 0.54rem;
+  text-align: center;
+}
+
+.modal-content {
+  background-color: #333;
+}
+
+
+// *** SIGN UP **
+
+.signup-head {
+  color: white;
+  font-family: 'Patua One', cursive;
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
+}
+
+.form-group {
+  color: grey;
+  font-weight: lighter;
+}
+
+.signup-submit {
+  background-color: transparent;
+  font-family: 'Patua One', cursive;
+  border: none;
+  color: white;
+  width: 10.3rem;
+  height: 5rem;
+  font-size: 2rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  left: 13rem;
+  top: 1.5rem;
+  border-style: solid;
+  border-width: 0.5rem;
+}
+
+.signup-cancel {
+  background-color: transparent;
+  font-family: 'Patua One', cursive;
+  border: none;
+  color: white;
+  width: 10.3rem;
+  height: 5.3rem;
+  font-size: 2rem;
+  padding-right: 2rem;
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  position: relative;
+  left: 23rem;
+  top: 1.5rem;
+  border-style: solid;
+  border-width: 0.54rem;
+  text-align: center;
+}
+
+// ************* END MODAL **********************
+
+#challenge-page {
+  background-image: image-url(challenges-background);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .userchalcontainer {
   display: flex;
@@ -9,11 +229,20 @@
   border: solid 0px black;
   display: flex;
   flex-direction: column;
+  left: 38rem;
+  bottom: 2rem;
+  width: 60rem;
+  background-color: #44453f;
+  border-radius: 7%;
 }
 
 .userchalrow {
   border: solid 0px black;
   width: 100%;
+  padding: 7rem;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color: white;
 }
 
 .userchaltitle {
@@ -22,15 +251,45 @@
 }
 
 .userchalrow:hover {
-  background: #adf3f7;  /* #eddaef; */
-  width: 100%;
+
+}
+
+.cardio-icon {
+  height: 6rem;
+  width: 6rem;
+  position: relative;
+  left: 45rem;
+  top: 12rem;
+  z-index: 100;
+}
+
+.water-icon {
+  height: 6rem;
+  width: 6rem;
+  position: relative;
+  left: 39rem;
+  top: 33rem;
+  z-index: 100;
+}
+
+.weights-icon {
+  height: 6rem;
+  width: 6rem;
+  position: relative;
+  left: 34rem;
+  top: 56rem;
+  z-index: 100;
 }
 
 .userchalitem {
-  float: left;
+  position: relative;
+  left: 11rem;
   border: solid 0px black;
   width: 25%;
-  padding: 5px;
+  font-size: 2.5rem;
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+  padding-right: 32rem;
 }
 
 .userchalitem2 {
@@ -60,7 +319,7 @@
 }
 
 .stepsrow:hover {
-  background: #adf3f7;  /* #eddaef; */
+  background: #adf3f7;
   width: 100%;
 }
 
@@ -69,7 +328,6 @@
   border: solid 0px black;
   width: 10%;
   padding: 5px;
-  /* border: 1px solid black; */
 }
 
 .stepsitem2 {
@@ -79,26 +337,22 @@
   padding: 5px;
 }
 
-
 html, body {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: skyblue;
+  background-color: lightskyblue;
 }
 
-.login-button {
-  position: absolute;
-  top: 40vh;
-  left: 41.8vw;
-}
-
-.logout-button {
-  position: absolute;
-  top: 40vh;
-  left: 47.8vw;
+.grass {
+  position: fixed;
+  width: 100%;
+  height: 48rem;
+  left: 0rem;
+  bottom: 0rem;
+  z-index: -1;
 }
 
 .dexter-button {
@@ -116,6 +370,8 @@ body {
   float: right;
   margin-right: 3rem;
   margin-top: 1rem;
+  color: white;
+  text-decoration: none;
 }
 
 .dexter-img img {
@@ -125,8 +381,9 @@ body {
   margin-right: 63rem;
 }
 
-.dexter-button a{
+.dexter-button a {
   display: flex;
+  color: white;
 }
 
 .dexter-button a:visited {
@@ -144,12 +401,14 @@ body {
   top: -1rem;
   left: 56rem;
 }
+
 .challenge-links {
-  position: relative;
-  font-size: 2.5rem;
-  top: -1rem;
-  left: 56rem;
+  position: fixed;
+  top: 12rem;
+  left: 3.6rem;
 }
+
+// ****  MEDIA QUERY *****
 
 @media only screen
   and (min-device-width: 320px)
@@ -163,6 +422,7 @@ body {
     margin-top: 3rem;
     font-size: 3.5rem;
   }
+
 .dexter-one {
   margin-top: 8rem;
   margin-left: 3rem;
@@ -173,14 +433,93 @@ body {
     margin-top: 11rem;
     margin-left: 3rem;
 }
-  // .dexter-button {
-  //   display: flex;
-  //   margin-top: 5rem;
-  //   margin-left: 5rem;
-  // }
-  //
-  // .top-button {
-  //   margin-top: 9rem;
-  //   margin-left: 2rem;
-  // }
+
+// *** main page **
+.login-background {
+  background-image: image-url(dog-mobile);
+  width: 129vw;
+  height: 146vh;
+}
+
+.welcome {
+  color: white;
+  font-family: 'Patua One', cursive;
+  position: relative;
+  top: -158rem;
+  left: 6rem;
+  font-size: 6rem;
+}
+
+.join {
+  font-family: 'Patua One', cursive;
+  color: white;
+  position: relative;
+  top: -145.7rem;
+  right: -5rem;
+  font-size: 6rem;
+}
+
+.index-footer {
+  background-color: rgba(25, 15, 15, 0.9);
+  height: 74rem;
+  width: 131%;
+  position: relative;
+  top: -23rem;
+  z-index: -1;
+}
+
+.login-button button {
+    background-color: transparent;
+    font-family: 'Patua One', cursive;
+    border: none;
+    color: white;
+    width: 17.3rem;
+    height: 5rem;
+    font-size: 4.5rem;
+    padding-right: 2.5rem;
+    position: relative;
+    top: 0rem;
+    left: 2rem;
+}
+
+.login-button {
+  bottom: 47rem;
+  border-style: solid;
+  border-width: 0.5rem;
+  border-color: white;
+  height: 9rem;
+  width: 21rem;
+  position: relative;
+  top: -156rem;
+  left: 18rem;
+  padding-top: .5rem;
+}
+
+.logout-button button {
+  background-color: transparent;
+  font-family: 'Patua One', cursive;
+  border: none;
+  color: white;
+  width: 11.3rem;
+  height: 12rem;
+  padding-right: 1rem;
+  font-size: 4rem;
+  padding-bottom: 2.5rem;
+  position: relative;
+  left: 3rem;
+  top: 0rem;
+}
+
+.logout-button {
+    position: relative;
+    top: -144.7rem;
+    left: 19vw;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-color: white;
+    height: 15rem;
+    width: 19.3rem;
+    padding-top: .5rem;
+}
+
 }

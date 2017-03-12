@@ -20,52 +20,390 @@
 # Remember to clear challenge and steps table to load new
 
 step_args  = {
-  "Healthy Eating" => [
-      {
-        name: "foo",
-        description: "foo info",
-        completed: false,
-        complete_by: Time.now.utc,
-        Tmsg: ""
-      },
-      {
-        name: "bar",
-        description: "bar info",
-        completed: false,
-        complete_by: Time.now.utc,
-        Tmsg: ""
-      },
-      {
-        name: "waz",
-        description: "waz info",
-        completed: false,
-        complete_by: Time.now.utc,
-        Tmsg: "he-3 test msg"
-      },
+  "30 Functional Fitness Challenge" => [
+    {
+      name: "Day 1",
+      description: "5 push ups | 10 squats",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 2",
+      description: "10 dips | 10 lunges",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 3",
+      description: "5 push ups | 10 squats",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 4",
+      description: "10 dips | 10 lunges",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 5",
+      description: "REST",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 6",
+      description: "10 push ups | 15 squats",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 7",
+      description: "15 dips | 15 lunges",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 8",
+      description: "10 push ups | 20 squats",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 9",
+      description: "15 dips | 15 lunges",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 10",
+      description: "15 push ups | 20 squats",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 11",
+      description: "REST",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 12",
+      description: "20 dips | 20 lunges",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 13",
+      description: "15 push ups | 30 squats",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 14",
+      description: "20 dips | 20 lunges",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 15",
+      description: "15 push ups | 30 squats",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 16",
+      description: "25 dips | 25 lunges",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 17",
+      description: "REST",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 18",
+      description: "20 push ups | 30 squats",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 19",
+      description: "25 dips | 25 lunges",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 20",
+      description: "20 push ups | 25 squats",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 21",
+      description: "30 dips | 30 lunges",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 22",
+      description: "25 push ups | 25 squats",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 23",
+      description: "30 dips | 30 lunges",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 24",
+      description: "REST",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 25",
+      description: "25 push ups | 40 squats",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 26",
+      description: "35 tricep dips | 35 lunges",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 27",
+      description: "25 push ups | 45 squats",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 28",
+      description: "35 dips | 35 lunges",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 29",
+      description: "30 push ups | 50 squats",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 30",
+      description: "40 dips | 40 lunges",
+      completed: false,
+      complete_by: Time.now.utc
+    },
     ], # end of first set of steps args
-  "Fitness" => [
+  "Running Challenge" => [
     {
-      name: "foo Fitness",
-      description: "foo Fitness info",
+      name: "Day 1",
+      description: "4 minute walk, 1 min run. 3 sets",
       completed: false,
-      complete_by: Time.now.utc,
-      Tmsg: ""
+      complete_by: Time.now.utc
     },
     {
-      name: "bar Fitness",
-      description: "bar Fitness info",
+      name: "Day 2",
+      description: "4 min walk, 1 min run. 4 sets",
       completed: false,
-      complete_by: Time.now.utc,
-      Tmsg: ""
+      complete_by: Time.now.utc
     },
     {
-      name: "waz Fitness",
-      description: "waz Fitness info",
+      name: "Day 3",
+      description: "2 min walk, 2 min run. 2 sets",
       completed: false,
-      complete_by: Time.now.utc,
-      Tmsg: "f-3 test message here"
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 4",
+      description: "15 min walk",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 5",
+      description: "1 min walk, 10 sec sprint. 5 sets",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 6",
+      description: "2 min walk, 2 min run. 3 sets",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 7",
+      description: "3 min walk, 2 min run. 3 sets",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 8",
+      description: "15 min walk",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 9",
+      description: "2 min walk, 2 min run. 4 sets",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 10",
+      description: "2 min walk, 10 sec sprint. 5 sets",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 11",
+      description: "5 min walk, 2 min run. 4 sets",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 12",
+      description: "15 min walk",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 13",
+      description: "2 min walk, 3 min run. 3 sets",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 14",
+      description: "2 min walk, 2 min run. 4 sets",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 15",
+      description: "2 min walk, 20 sec sprint. 5 sets",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 16",
+      description: "15 min walk",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 17",
+      description: "3 min walk, 3 min run. 4 sets",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 18",
+      description: "2 min walk, 3 min run. 4 sets",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Day 19",
+      description: "3 min walk, 3 min run. 5 sets",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Workout 20",
+      description: "15 min walk",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Workout 21",
+      description: "1 min walk, 1 min run. 5 sets",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Workout 22",
+      description: "1 min walk, 2 min run. 3 sets",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Workout 23",
+      description: "1 min walk, 3 min run. 3 sets",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Workout 24",
+      description: "15 min walk",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Workout 25",
+      description: "2 min walk, 25 sec sprint. 5 sets",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Workout 26",
+      description: "1 min walk, 4 min run. 3 sets",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Workout 27",
+      description: "2 min walk, 4 min run. 4 sets",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Workout 28",
+      description: "15 min walk",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Workout 29",
+      description: "2 min walk, 5 min run. 3 sets",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Workout 30",
+      description: "2 min walk, 5 min run. 4 sets",
+      completed: false,
+      complete_by: Time.now.utc
     },
   ],
+  "Water Challenge" => [
+    {
+      name: "First glass",
+      description: "Drink 12oz!",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Second Glass",
+      description: "Drink 12oz!",
+      completed: false,
+      complete_by: Time.now.utc
+    },
+    {
+      name: "Third Glass",
+      description: "Drink 12oz!",
+      completed: false,
+      complete_by: Time.now.utc
+    }
+  ]
 }
 
 step_args.each do |challenge_name, steps|

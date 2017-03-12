@@ -22,8 +22,8 @@ def send_message(phone_number, alert_message)
          from: twilio_number,
          to:   phone_number,
          body: alert_message,
-         # US phone numbers can make use of an image as well
-         # media_url: image_url
+        #  US phone numbers can make use of an image as well
+        #  media_url: image_url
        )
 
 end
