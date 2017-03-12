@@ -7,13 +7,6 @@ def index
    if current_user
      @user = current_user
      @user_challenges = @user.user_challenges.group(:challenge)
-
-     @challenges = @user.challenges
-     @var = current_user
-     @phone = @var.phone
-     @alert = "Welcome to the Dexter app!"
-     @img = ""
-     #send_message(@phone, @alert, @img)
    end
 
 end
@@ -21,7 +14,7 @@ end
 def signup
 end
 
-def send_message(phone_number, alert_message, img_url)
+def send_message(phone_number, alert_message)
    twilio_number = ENV['TWILIO_NUMBER']
    client = Twilio::REST::Client.new ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN']
 
@@ -33,16 +26,31 @@ def send_message(phone_number, alert_message, img_url)
         #  media_url: image_url
        )
 
-  #alert_message = "<<MSG
-  #Hello from Dexter!
-  #Go to: http://dexter.com for more details.
-  #MSG"
+end
 
+def create_txtmsg
+  var = UserChallenge.all
+  var.each do |row|
+  step_time = row["complete_by"].to_datetime
+  #happens in the future but only 30 min into the future
+  if step_time > DateTime.now && step_time < DateTime.now + 30.minutes
+    #puts "hit the window of time!! yay!"
+    fullstep = Step.find(row["step_id"])
+    txtmsg = fullstep.Tmsg
+    fulluser = User.find(row["user_id"])
+    phone = fulluser.phone
+    #puts phone
+    txtmsg = "Hi #{fulluser.firstname}, It's Dexter. " + txtmsg
+    #puts txtmsg
+    send_message(phone, txtmsg)
+  else
+    puts "outside the window"
+  end
+end
 end
 
 
 def create
-
   user = User.new(user_params)
         if user.password != user.password_confirmation
           flash[:notice] = "Can't proceed, passwords don't match."
