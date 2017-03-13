@@ -1,9 +1,9 @@
 <body id="challenge-page">
 
-<div class="functional-fitness-content">
+
   <%= image_tag("weights.png", :class => "weights-icon") %>
   <p class="challenge-descriptions" id="functional-fitness"> Train your body<br>for daily life activities<br> through 30 days of<br> Squats, Push ups, Lunges <br>and Tricep Dips.</p>
-</div>
+
 
 <div class="running-content">
   <%= image_tag("wellness.png", :class => "cardio-icon") %>
@@ -23,7 +23,7 @@
     <%= form_for UserChallenge.new do |f| %>
         <%= f.hidden_field :challenge_id, value: challenge.id %>
       <div class="accept-button">
-         <%= f.submit "Accept", class: 'btn btn-default' %>
+         <%= f.submit "Accept", class: 'btn btn-default', id: 'accept-button' %>
       </div>
   </div>
   <% end %>

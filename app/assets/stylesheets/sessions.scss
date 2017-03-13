@@ -272,7 +272,7 @@
 #functional-fitness {
   position: relative;
   left: 10rem;
-  top: 11rem;
+  top: 10rem;
   z-index: 100;
   text-align: center;
 }
@@ -314,8 +314,13 @@
   width: 6rem;
   position: relative;
   left: 79rem;
-  top: 10rem;
+  top: 9rem;
   z-index: 100;
+}
+
+#accept-button {
+  position: relative;
+  z-index: 200;
 }
 
 html, body {
