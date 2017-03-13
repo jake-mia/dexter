@@ -250,6 +250,18 @@
   width: 100%;
 }
 
+.challenge-name {
+  color: white;
+  font-size: 2rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+  width: 14rem;
+  text-align: center;
+  position: relative;
+  left: -3rem;
+  top: -1rem;
+}
+
 .challenge-descriptions {
   font-size: 1.6rem;
   color: white;
@@ -260,22 +272,22 @@
 #functional-fitness {
   position: relative;
   left: 16rem;
-  top: 7rem;
+  top: 15rem;
   z-index: 100;
   text-align: center;
 }
 
 #running-challenge {
   position: relative;
-  left: 17rem;
-  top: 19rem;
+  left: 16rem;
+  top: 21rem;
   text-align: center;
 }
 
 #water-challenge {
   position: relative;
-  left: 17rem;
-  top: 26rem;
+  left: 16rem;
+  top: 25rem;
   text-align: center;
 }
 
