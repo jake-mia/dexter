@@ -6,27 +6,31 @@
   <%= @challenge.body %>
 </p>
 <br>
-<div class="steps-container">
-  <% current_user.user_challenges_for(@challenge).order(:step_id).each do |ucs| %>
-    <div class="steps-box">
-      <div class="step-text"><%= ucs.step.name.upcase %></div><br>
-      <div class="step-text"><%= ucs.step.description %></div>
-      <div class="step-text"><%= ucs.complete_by %></div>
-      <div class="step-text"><% ucs.completed %></div>
 
-      <%= form_for ucs do |f| %>
-          <%= f.hidden_field :completed, value: true %>
-        <div class="mark-complete">
-           <%= f.submit "Mark Complete", class: 'btn btn-default' %>
-        </div>
-           <% end %>
-
-      <div class="ignore"><%= link_to 'Ignore', ucs, method: :delete, data: { confirm: 'Are you sure?' } %></div>
-      <!-- div class="userchalitem2"><%= link_to 'Complete', '#' %></div> -->
+  <div class="steps-container">
+    <% current_user.user_challenges_for(@challenge).order(:step_id).each do |ucs| %>
+    <div class="completed">
+      <%= image_tag "completed.png", class: "completed" %>
     </div>
-  <% end %>
-</div>
+      <div class="steps-box">
+        <div class="step-text"><%= ucs.step.name.upcase %></div><br>
+        <div class="step-text"><%= ucs.step.description %></div>
+        <div class="step-text"><%= ucs.complete_by %></div>
+        <div class="step-text"><% ucs.completed %></div>
 
+        <%= form_for ucs do |f| %>
+            <%= f.hidden_field :completed, value: true %>
+          <div class="mark-complete">
+             <%= f.submit "Mark Complete", class: 'btn btn-default' %>
+          </div>
+             <% end %>
+
+        <div class="ignore"><%= link_to 'Ignore', ucs, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+        <!-- div class="userchalitem2"><%= link_to 'Complete', '#' %></div> -->
+      </div>
+    <% end %>
+  </div>
+</div>
 
 <br><br>
 <%= link_to 'Back', root_path %>

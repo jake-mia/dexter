@@ -33,7 +33,7 @@ def create_txt_msg
   var.each do |row|
   step_time = row["complete_by"].to_datetime
   #happens in the future but only 30 min into the future
-  if step_time > DateTime.now && step_time < DateTime.now + 30.minutes
+  if step_time > DateTime.now && step_time < DateTime.now + 10.minutes
     #puts "hit the window of time!! yay!"
     fullstep = Step.find(row["step_id"])
     txtmsg = fullstep.Tmsg
