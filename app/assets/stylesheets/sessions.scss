@@ -7,7 +7,10 @@
 
 
 // ****** LOGIN / SIGN UP PAGE ******
-
+a {
+  color: white;
+  text-decoration: none;
+}
 .login-background {
   height: 100vh;
   width: 100vw;
@@ -373,7 +376,7 @@ body {
 }
 
 .dexter-button a:visited {
-  color: #fff;
+  color: white;
 }
 
 .dexter-button a:hover {
@@ -390,8 +393,9 @@ body {
 
 .challenge-links {
   position: fixed;
-  top: 12rem;
-  left: 3.6rem;
+  top: 11rem;
+  left: 10rem;
+  color: white;
 }
 
 // ****  MEDIA QUERY *****

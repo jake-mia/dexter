@@ -56,13 +56,13 @@
   /*animation-direction: alternate;*/
 }
 
-.pupil {
+.sad-pupil {
   background-color: black;
   height: 38px;
   width: 30px;
   margin-top: 2em;
   border-radius: 25px;
-  margin-left: 6px;
+  margin-left: 2px;
   margin-right: 2px;
   margin-bottom: 4px;
   animation-name: blink;
