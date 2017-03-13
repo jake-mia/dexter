@@ -7,7 +7,7 @@
 </p>
 <br>
 <div class="steps-container">
-  <% current_user.user_challenges_for(@challenge).each do |ucs| %>
+  <% current_user.user_challenges_for(@challenge).order(:step_id).each do |ucs| %>
     <div class="steps-box">
       <div class="step-text"><%= ucs.step.name.upcase %></div><br>
       <div class="step-text"><%= ucs.step.description %></div>

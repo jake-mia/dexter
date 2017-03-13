@@ -6,17 +6,23 @@
 
 .steps-container {
   background-color: #44453f;
-  width: 53rem;
+  width: 101rem;
   padding-top: 1rem;
-  margin-left: 45rem;
-  padding-bottom: 1rem;
+  margin-left: 16rem;
+  padding-bottom: 3rem;
   border-radius: 3rem;
+  display: flex;
+  flex-wrap: wrap
 }
 
 .challenge-title {
   text-align: center;
   font-size: 5rem;
+  color: #44453f;
+  font-family: 'Patua One', cursive;
+  font-weight: bolder;
 }
+
 .steps-box {
   display: flex;
   flex-direction: column;
@@ -28,7 +34,7 @@
   border-color: white;
   height: 21rem;
   width: 28rem;
-  margin-left: 13rem;
+  margin-left: 4rem;
   margin-top: 3rem;
 }
 
