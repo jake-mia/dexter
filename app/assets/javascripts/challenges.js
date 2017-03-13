@@ -4,8 +4,8 @@
 
 
 $(document).ready(function(){
-  var find_check = "";
-  var find_slot = "";
+  // var find_check = "";
+  // var find_slot = "";
 
   $("img.completed").hide();
   $(".steps-box").show();

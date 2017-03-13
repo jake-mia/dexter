@@ -200,21 +200,21 @@ step_args  = {
       name: "Day 26",
       description: "35 dips | 35 lunges",
       completed: false,
-      complete_by: DateTime.now.midnight + 26.days + .hours,
+      complete_by: DateTime.now.midnight + 26.days + 20.hours,
       Tmsg: ""
     },
     {
       name: "Day 27",
       description: "25 push ups | 45 squats",
       completed: false,
-      complete_by: DateTime.now.midnight + 27.days + .hours,
+      complete_by: DateTime.now.midnight + 27.days + 20.hours,
       Tmsg: ""
     },
     {
       name: "Day 28",
       description: "35 dips | 35 lunges",
       completed: false,
-      complete_by: DateTime.now.midnight + 28.days + .hours,
+      complete_by: DateTime.now.midnight + 28.days + 20.hours,
       Tmsg: ""
     },
     {
