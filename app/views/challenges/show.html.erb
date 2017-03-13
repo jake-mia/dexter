@@ -18,7 +18,7 @@
       </b>
     </div>
 
-    <% current_user.user_challenges_for(@challenge).each do |ucs| %>
+    <% current_user.user_challenges_for(@challenge).order(:step_id).each do |ucs| %>
       <div class="stepsrow">
         <!-- div class="stepsitem"><%= ucs.challenge.name %></div> -->
         <div class="stepsitem"><%= ucs.step.name %></div>

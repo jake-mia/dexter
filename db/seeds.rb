@@ -18,6 +18,20 @@
 # Dexter
 #
 # Remember to clear challenge and steps table to load new
+#
+#
+
+#<%= DateTime.now.midnight + 1.days + 15.hours %>
+#<%#= t = Time.now %><br>
+#<%#= t.hour = '00:00' %><br>
+#<%#= t = t + 1.days %>
+#<%#= t.month %>
+#<%#= t.day %>
+#<%#= t.year %>
+#<%#= Time.new() %>
+#<%#= myvar = Date.now.strftime('%m %d %Y') %>
+#<%#= myvar = Date.now.strptime('%m %d %Y') %>
+#<%#= var5 = var5 + 1.days + 15.hours  %>
 
 step_args  = {
   "30 Functional Fitness Challenge" => [
@@ -25,7 +39,7 @@ step_args  = {
       name: "Day 1",
       description: "5 push ups | 10 squats",
       completed: false,
-      complete_by: Time.now.utc
+      complete_by: DateTime.now.midnight + 1.days + 15.hours
     },
     {
       name: "Day 2",
