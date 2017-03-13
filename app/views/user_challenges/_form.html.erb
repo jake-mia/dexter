@@ -1,26 +1,32 @@
 <body id="challenge-page">
-<div class="challenge-form-background"></div>
-<%= image_tag("weights.png", :class => "weights-icon") %>
-<p class="challenge-descriptions" id="functional-fitness"> Train your body<br>for daily life activities<br> through 30 days of<br> Squats, Push ups, Lunges <br>and Tricep Dips.</p>
-<%= image_tag("wellness.png", :class => "cardio-icon") %>
-<p class="challenge-descriptions" id="running-challenge">Go from <br>walking to running<br> in 30 days! </p>
-<%= image_tag("water.png", :class => "water-icon") %>
-<p class="challenge-descriptions" id="water-challenge"> Increase <br>your metabolism, <br>think clearer and <br>perform better by <br>getting the recommended amount <br>of water every day! </p>
+
+<div class="functional-fitness-content">
+  <%= image_tag("weights.png", :class => "weights-icon") %>
+  <p class="challenge-descriptions" id="functional-fitness"> Train your body<br>for daily life activities<br> through 30 days of<br> Squats, Push ups, Lunges <br>and Tricep Dips.</p>
+</div>
+
+<div class="running-content">
+  <%= image_tag("wellness.png", :class => "cardio-icon") %>
+  <p class="challenge-descriptions" id="running-challenge">Go from <br>walking to running<br> in 30 days! </p>
+</div>
+
+<div class="water-content">
+  <%= image_tag("water.png", :class => "water-icon") %>
+  <p class="challenge-descriptions" id="water-challenge"> Increase <br>your metabolism, <br>think clearer and <br>perform better by <br>getting the recommended amount <br>of water every day! </p>
+</div>
+
 <div class="userchalcontainer">
 
 <% @challenges.each do |challenge| %>
    <div class="userchalrow">
-   <div class="userchalitem"><%= challenge.name %></div>
-  <%= form_for UserChallenge.new do |f| %>
-    <!-- div class="field" -->
-      <%= f.hidden_field :challenge_id, value: challenge.id %>
-    <!-- /div -->
-    <div class="actions userchalitem">
-       <%= f.submit "Accept", class: 'btn btn-default' %>
-    </div>
-  </div>  <!-- end the row -->
+     <div class="challenge-name"><%= challenge.name %></div>
+    <%= form_for UserChallenge.new do |f| %>
+        <%= f.hidden_field :challenge_id, value: challenge.id %>
+      <div class="accept-button">
+         <%= f.submit "Accept", class: 'btn btn-default' %>
+      </div>
+  </div>
   <% end %>
 <% end %>
-
 
 </div>
