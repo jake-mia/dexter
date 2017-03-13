@@ -46,7 +46,7 @@ step_args  = {
       name: "Day 4",
       description: "10 dips | 10 lunges",
       completed: false,
-      complete_by: DateTime.now.midnight + 4.days, + 20.hours,
+      complete_by: DateTime.now.midnight + 4.days + 20.hours,
       Tmsg: ""
     },
     {
