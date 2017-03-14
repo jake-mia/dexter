@@ -1,12 +1,14 @@
 class UserChallengesController < ApplicationController
-  before_action :set_user_challenge, only: [:show, :update]
+  before_action :set_user_challenge, only: [:update]
 
   def index
 
   end
 
   def show
+    #@user_challenge = UserChallenge.find(params[:id])
     @steps = Step.where(challenge_id: params[:challenge_id])
+    redirect_to root_path
   end
 
   # GET /user_challenges/1/edit
@@ -42,7 +44,7 @@ class UserChallengesController < ApplicationController
 
   def destroy
     @user_challenge.destroy
-    redirect_to user_challenge_url, notice: 'user_challenge was successfully destroyed.'
+    redirect_to user_challenge_path, notice: 'user_challenge was successfully destroyed.'
   end
 
   private

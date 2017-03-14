@@ -12,7 +12,7 @@ class ChallengesController < ApplicationController
   # GET /challenges/1
   # GET /challenges/1.json
   def show
-
+  
   end
 
   # GET /challenges/new

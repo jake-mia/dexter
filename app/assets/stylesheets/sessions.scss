@@ -7,7 +7,10 @@
 
 
 // ****** LOGIN / SIGN UP PAGE ******
-
+a {
+  color: white;
+  text-decoration: none;
+}
 .login-background {
   height: 100vh;
   width: 100vw;
@@ -230,7 +233,7 @@
   display: flex;
   flex-direction: column;
   left: 38rem;
-  bottom: 2rem;
+  bottom: 44rem;
   width: 60rem;
   background-color: #44453f;
   border-radius: 7%;
@@ -250,16 +253,53 @@
   width: 100%;
 }
 
-.userchalrow:hover {
+.challenge-name {
+  color: white;
+  font-size: 2rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: bold;
+  width: 14rem;
+  text-align: center;
+  position: relative;
+  left: -3rem;
+  top: -1rem;
+}
 
+.challenge-descriptions {
+  font-size: 1.6rem;
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+  z-index: 100;
+}
+
+#functional-fitness {
+  position: relative;
+  left: 10rem;
+  top: 10rem;
+  z-index: 100;
+  text-align: center;
+}
+
+#running-challenge {
+  position: relative;
+  left: 11rem;
+  top: 20rem;
+  text-align: center;
+}
+
+#water-challenge {
+  position: relative;
+  left: 11rem;
+  top: 27rem;
+  text-align: center;
 }
 
 .cardio-icon {
   height: 6rem;
   width: 6rem;
   position: relative;
-  left: 45rem;
-  top: 12rem;
+  left: 80rem;
+  top: 19rem;
   z-index: 100;
 }
 
@@ -267,8 +307,8 @@
   height: 6rem;
   width: 6rem;
   position: relative;
-  left: 39rem;
-  top: 33rem;
+  left: 80rem;
+  top: 26rem;
   z-index: 100;
 }
 
@@ -276,65 +316,14 @@
   height: 6rem;
   width: 6rem;
   position: relative;
-  left: 34rem;
-  top: 56rem;
+  left: 79rem;
+  top: 9rem;
   z-index: 100;
 }
 
-.userchalitem {
+#accept-button {
   position: relative;
-  left: 11rem;
-  border: solid 0px black;
-  width: 25%;
-  font-size: 2.5rem;
-  color: white;
-  font-family: 'Rajdhani', sans-serif;
-  padding-right: 32rem;
-}
-
-.userchalitem2 {
-  float: left;
-  border: solid 0px black;
-  width: 10%;
-  padding: 5px;
-}
-
-
-.stepscontainer {
-  display: flex;
-  position: relative;
-  border: solid 0px black;
-  display: flex;
-  flex-direction: column;
-}
-
-.stepsrow {
-  border: solid 0px black;
-  width: 100%;
-}
-
-.stepstitle {
-  border: solid 0px black;
-  width: 100%;
-}
-
-.stepsrow:hover {
-  background: #adf3f7;
-  width: 100%;
-}
-
-.stepsitem {
-  float: left;
-  border: solid 0px black;
-  width: 10%;
-  padding: 5px;
-}
-
-.stepsitem2 {
-  float: left;
-  border: solid 0px black;
-  width: 20%;
-  padding: 5px;
+  z-index: 200;
 }
 
 html, body {
@@ -387,7 +376,7 @@ body {
 }
 
 .dexter-button a:visited {
-  color: #fff;
+  color: white;
 }
 
 .dexter-button a:hover {
@@ -404,8 +393,9 @@ body {
 
 .challenge-links {
   position: fixed;
-  top: 12rem;
-  left: 3.6rem;
+  top: 11rem;
+  left: 10rem;
+  color: white;
 }
 
 // ****  MEDIA QUERY *****

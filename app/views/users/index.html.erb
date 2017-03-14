@@ -9,10 +9,11 @@
   <div class="dexter-button">
     <%= link_to new_user_challenge_path do %>
       <i class="fa fa-plus-circle fa-4x"></i>
+
       Add A<br>Challenge
   <% end %>
   </div>
-<!-- <div class="dexter-one"></div> -->
+<div class="dexter-one"></div>
 
 <% if current_user %>
   <div class="challenge-links">
@@ -26,9 +27,9 @@
     <%= image_tag("grass.png", class: "grass") %>
   </div>
 
-  <%#= render 'dexter-happy' %>
-  <%= render 'dexter-default' %>
-  <%#= render 'sad-dexter' %>
+
+  <%#= render 'dexter-default' %>
+  <%= render 'sad-dexter' %>
 
 
   <!-- <div class="health-box">

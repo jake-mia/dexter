@@ -1,0 +1,102 @@
+.steps-page {
+  /*background-image: image-url(challenges-background);*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.steps-container {
+  background-color: #44453f;
+  width: 101rem;
+  padding-top: 1rem;
+  margin-left: 20rem;
+  padding-bottom: 3rem;
+  border-radius: 3rem;
+  display: flex;
+  flex-wrap: wrap
+}
+
+.challenge-title {
+  text-align: center;
+  font-size: 5rem;
+  color: #44453f;
+  font-family: 'Patua One', cursive;
+  font-weight: bolder;
+}
+
+.steps-box {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  align-items: center;
+  border-style: double;
+  border-width: thick;
+  border-color: white;
+  height: 21rem;
+  width: 28rem;
+  margin-left: 4rem;
+  margin-top: 3rem;
+}
+
+.completed-image {
+  height: 21rem;
+  width: 28rem;
+}
+
+.step-text {
+  padding-bottom: .5rem;
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2rem;
+}
+
+/*.userchalitem {
+  position: relative;
+  left: 11rem;
+  border: solid 0px black;
+  width: 25%;
+  font-size: 2.5rem;
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+  padding-right: 32rem;
+}
+
+.userchalitem2 {
+  float: left;
+  border: solid 0px black;
+  width: 10%;
+  padding: 5px;
+}
+
+
+.stepscontainer {
+  display: flex;
+  position: relative;
+  border: solid 0px black;
+  display: flex;
+  flex-direction: column;
+}
+
+.stepsrow {
+  border: solid 0px black;
+  width: 100%;
+}
+
+.stepstitle {
+  border: solid 0px black;
+  width: 100%;
+}
+
+.stepsitem {
+  float: left;
+  border: solid 0px black;
+  width: 10%;
+  padding: 5px;
+}
+
+.stepsitem2 {
+  float: left;
+  border: solid 0px black;
+  width: 20%;
+  padding: 5px;
+}*/

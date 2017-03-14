@@ -1,5 +1,5 @@
 class StepsController < ApplicationController
-  before_action :set_step, only: [:show, :edit, :update, :destroy]
+  before_action :set_step, only: [:show, :edit, :update]
 
   # GET /steps
   # GET /steps.json
@@ -59,11 +59,15 @@ class StepsController < ApplicationController
   # DELETE /steps/1
   # DELETE /steps/1.json
   def destroy
-    @step.destroy
-    respond_to do |format|
-      format.html { redirect_to steps_url, notice: 'Step was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    #@step = Step.find(params[:id])
+    @user_challenge = current_user.user_challenges.find(params[:challenge_id])
+    #@user_challenge = UserChallenge.find
+    #@user_challenge = UserChallenge.find(params[:challenge_id]).find(params[:id])
+    #@user_challenge current_user.user_challenges_for(@challenge).find(params[:id])
+    @user_challenge.destroy
+    redirect_to user_challenge_path, notice: 'user_challenge was successfully destroyed.'
+    #@step.destroy
+    #redirect_to steps_url, notice: 'ucs was successfully destroyed.'
   end
 
   private
@@ -74,6 +78,6 @@ class StepsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def step_params
-      params.require(:step).permit(:Challenge_id, :name, :completed, :description)
+      params.require(:step).permit(:challenge_id, :name, :completed, :description, :id)
     end
 end
